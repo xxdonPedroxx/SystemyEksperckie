@@ -1,7 +1,630 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
-  <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
-  </category>
+<aiml version="2.0">
+
+<!-- =========== PODSTAWOWE PRZYWITANIA =========== -->
+<category>
+<pattern>CZEŚĆ</pattern>
+<pattern>HEJ</pattern>
+<pattern>DZIEŃ DOBRY</pattern>
+<pattern>SIEMA</pattern>
+<pattern>WITAJ</pattern>
+<pattern>START</pattern>
+<pattern>ROZPOCZNIJ</pattern>
+<template>
+    Cześć! Jestem GameBot, twój ekspert od gier komputerowych. 🎮
+    
+    Potrafię:
+    • Polecać gry
+    • Doradzać sprzęt gamingowy
+    • Pomagać początkującym
+    • Opowiadać o konkretnych grach
+    
+    Jak masz na imię?
+</template>
+</category>
+
+<!-- =========== ALIASY PRZYWITAŃ =========== -->
+<category>
+<pattern>HELLO</pattern>
+<template><srai>CZEŚĆ</srai></template>
+</category>
+
+<category>
+<pattern>HI</pattern>
+<template><srai>CZEŚĆ</srai></template>
+</category>
+
+<category>
+<pattern>NAZYWAM SIĘ *</pattern>
+<template>
+    <set name="imie"><star/></set>
+    Miło mi <get name="imie"/>! Jakie gry lubisz?
+</template>
+</category>
+
+<category>
+<pattern>MAM NA IMIĘ *</pattern>
+<template>
+    <srai>NAZYWAM SIĘ <star/></srai>
+</template>
+</category>
+
+<!-- ==================== SRAI PRZYKŁADY (5+) ==================== -->
+
+<category>
+<pattern>JAK SIĘ NAZYWASZ</pattern>
+<template><srai>KIM JESTEŚ</srai></template>
+</category>
+
+<category>
+<pattern>KIM JESTEŚ</pattern>
+<template>
+    Jestem GameBot, ekspert od gier wideo. 
+    Pomogę ci wybrać grę, doradzę sprzęt i odpowiem na pytania!
+</template>
+</category>
+
+<category>
+<pattern>DO ZOBACZENIA</pattern>
+<template><srai>PAPA</srai></template>
+</category>
+
+<category>
+<pattern>PAPA</pattern>
+<pattern>NARA</pattern>
+<pattern>ŻEGNAJ</pattern>
+<template>
+    Do zobaczenia <get name="imie"/>! Miło było pogadać o grach!
+</template>
+</category>
+
+<category>
+<pattern>CO POTRAFISZ</pattern>
+<template><srai>POMOC</srai></template>
+</category>
+
+<category>
+<pattern>POMOC</pattern>
+<template>
+    Potrafię: 1) Polecać gry 2) Doradzać sprzęt 3) Pomagać początkującym
+    4) Omawiać konkretne tytuły 5) Dyskutować o gamingie
+</template>
+</category>
+
+<category>
+<pattern>ILE MASZ LAT</pattern>
+<template><srai>JAKI JEST TWÓJ WIEK</srai></template>
+</category>
+
+<category>
+<pattern>JAKI JEST TWÓJ WIEK</pattern>
+<template>
+    Jestem botem, więc nie mam wieku. Ale znam gry z każdej epoki!
+</template>
+</category>
+
+<category>
+<pattern>ROZPOCZNIJ</pattern>
+<template><srai>CZEŚĆ</srai></template>
+</category>
+
+<!-- ==================== SET/GET PRZYKŁADY (5+) ==================== -->
+
+<category>
+<pattern>LUBIĘ * GRY</pattern>
+<template>
+    <set name="gatunek"><star/></set>
+    Świetnie! <get name="gatunek"/> to fajny gatunek!
+    <think><set name="znany_gatunek">TAK</set></think>
+</template>
+</category>
+
+<category>
+<pattern>GRAM NA *</pattern>
+<template>
+    <set name="platforma"><star/></set>
+    <condition name="platforma">
+        <li value="PC">PC to najlepszy wybór do grania!</li>
+        <li value="PLAYSTATION">PlayStation ma świetne exclusive!</li>
+        <li value="XBOX">Xbox Game Pass to super oferta!</li>
+        <li value="NINTENDO">Nintendo Switch jest super do grania w podróży!</li>
+        <li><get name="platforma"/>? Też dobra platforma!</li>
+    </condition>
+</template>
+</category>
+
+<category>
+<pattern>GRAM * GODZIN DZIENNIE</pattern>
+<template>
+    <set name="czas_grania"><star/></set>
+    <condition>
+        <li value="1">Tylko godzinę? Możesz więcej!</li>
+        <li value="2">2 godziny to rozsądny czas.</li>
+        <li value="3">3 godziny - pamiętaj o przerwach!</li>
+        <li value="4">4 godziny? Nie zapomnij o ruchu!</li>
+        <li value="5">5 godzin? Uważaj na zdrowie!</li>
+        <li><get name="czas_grania"/> godzin? Pamiętaj o balansie!</li>
+    </condition>
+</template>
+</category>
+
+<category>
+<pattern>MOJA ULUBIONA GRA TO *</pattern>
+<template>
+    <set name="ulubiona_gra"><star/></set>
+    <get name="ulubiona_gra"/>? Doskonały wybór!
+    <think><set name="zna_ulubiona">TAK</set></think>
+</template>
+</category>
+
+<category>
+<pattern>WOLĘ GRY *</pattern>
+<template>
+    <set name="trudnosc"><star/></set>
+    Zapisuję: preferujesz gry <get name="trudnosc"/>.
+</template>
+</category>
+
+<category>
+<pattern>CO O MNIE WIEM</pattern>
+<template>
+    <condition name="imie">
+        <li value="">Nie znam twojego imienia.</li>
+        <li>Znam cię jako <get name="imie"/>.</li>
+    </condition>
+    <condition name="gatunek">
+        <li value="">Nie wiem jaki gatunek lubisz.</li>
+        <li>Lubisz gry <get name="gatunek"/>.</li>
+    </condition>
+    <condition name="platforma">
+        <li value="">Nie wiem na czym grasz.</li>
+        <li>Grasz na <get name="platforma"/>.</li>
+    </condition>
+    <condition name="ulubiona_gra">
+        <li value="">Nie znam twojej ulubionej gry.</li>
+        <li>Twoja ulubiona gra to <get name="ulubiona_gra"/>.</li>
+    </condition>
+</template>
+</category>
+
+<!-- ==================== BAZA GIER - SZCZEGÓŁOWE TYTUŁY ==================== -->
+
+<category>
+<pattern>JAKĄ GRĘ POLECISZ</pattern>
+<template>
+    Jaki gatunek cię interesuje? RPG, FPS, przygodowe, strategia, survival?
+</template>
+</category>
+
+<category>
+<pattern>POLEC * GRĘ</pattern>
+<template>
+    <think><set name="szukany_gatunek"><star/></set></think>
+    <condition name="szukany_gatunek">
+        <li value="RPG">Do RPG polecam: Wiedźmin 3, Elden Ring, Cyberpunk 2077, Baldur's Gate 3</li>
+        <li value="FPS">FPS: Counter-Strike 2, Valorant, Call of Duty, Battlefield</li>
+        <li value="STRATEGIA">Strategie: StarCraft 2, Civilization VI, Total War, Age of Empires IV</li>
+        <li value="PRZYGODOWĄ">Przygodowe: Uncharted 4, Tomb Raider, God of War, Horizon Zero Dawn</li>
+        <li value="SURVIVAL">Survival: Minecraft, The Forest, Subnautica, Rust</li>
+        <li value="HORROR">Horrory: Resident Evil 7, Outlast, Alien: Isolation, Silent Hill</li>
+        <li value="SPORTOWĄ">Sportowe: FIFA 24, NBA 2K24, Rocket League, F1 2023</li>
+        <li value="WYCŚCIGOWĄ">Wyścigowe: Forza Horizon 5, Need for Speed, Gran Turismo 7</li>
+        <li>Na początek spróbuj The Witcher 3 - świetna gra dla każdego!</li>
+    </condition>
+</template>
+</category>
+
+<category>
+<pattern>CO TO JEST *</pattern>
+<template>
+    <think><set name="pytana_gra"><star/></set></think>
+    <condition name="pytana_gra">
+        <li value="WIEDŹMIN">Wiedźmin to saga RPG o Geralcie z Rivii!</li>
+        <li value="CYBERPUNK">Cyberpunk 2077 - RPG w futurystycznym Night City</li>
+        <li value="ELDEN RING">Elden Ring - hardcorowy RPG fantasy</li>
+        <li value="BALDUR'S GATE">Baldur's Gate 3 - RPG oparty na systemie D&D</li>
+        <li value="MINECRAFT">Minecraft - gra sandbox o budowaniu i przetrwaniu</li>
+        <li value="CSGO">CS:GO/CS2 - competitive FPS 5v5</li>
+        <li value="VALORANT">Valorant - tactical FPS z bohaterami</li>
+        <li value="LOL">League of Legends - MOBA 5v5</li>
+        <li value="DOTA">Dota 2 - MOBA z głęboką mechaniką</li>
+        <li value="FORTNITE">Fortnite - battle royale z budowaniem</li>
+        <li value="APEX">Apex Legends - battle royale z bohaterami</li>
+        <li value="GTA">Grand Theft Auto - sandbox crime</li>
+        <li value="RED DEAD">Red Dead Redemption 2 - western open-world</li>
+        <li value="ASSASSIN">Assassin's Creed - historia o asasynach</li>
+        <li value="FIFA">FIFA - symulacja piłki nożnej</li>
+        <li>Nie znam gry <get name="pytana_gra"/>.</li>
+    </condition>
+</template>
+</category>
+
+<category>
+<pattern>ZNAJDŹ GRĘ *</pattern>
+<template>
+    <think><set name="szukana_gra"><star/></set></think>
+    <condition name="szukana_gra">
+        <li value="CYBERPUNK">Cyberpunk 2077 - RPG w futurystycznym świecie od CD Projekt RED</li>
+        <li value="ELDEN RING">Elden Ring - hardcore RPG od FromSoftware, zdobywca GOTY 2022</li>
+        <li value="BALDUR'S GATE">Baldur's Gate 3 - nagradzany RPG od Larian Studios, GOTY 2023</li>
+        <li value="HORIZON">Horizon Zero Dawn/Forbidden West - akcja w postapokaliptycznym świecie</li>
+        <li value="METRO">Metro Exodus - FPS w postapokaliptycznej Rosji</li>
+        <li value="ASSASSIN">Assassin's Creed - seria gier historycznych o asasynach</li>
+        <li value="RESIDENT EVIL">Resident Evil - seria survival horrorów</li>
+        <li value="THE LAST OF US">The Last of Us - postapokaliptyczna przygoda</li>
+        <li value="GOD OF WAR">God of War - mitologia nordycka w akcji</li>
+        <li value="SPIDER-MAN">Spider-Man - przygody Spider-Mana w NYC</li>
+        <li value="STARFIELD">Starfield - space RPG od twórców Skyrima</li>
+        <li value="DIABLO">Diablo IV - hack'n'slash RPG</li>
+        <li value="OVERWATCH">Overwatch 2 - hero shooter 5v5</li>
+        <li value="RAINBOW SIX">Rainbow Six Siege - tactical shooter</li>
+        <li>Szukam informacji o <get name="szukana_gra"/>...</li>
+    </condition>
+</template>
+</category>
+
+<category>
+<pattern>JAKA GRA JEST NAJLEPSZA</pattern>
+<template>
+    To zależy od gustu! Oto moje topki:
+    - RPG: The Witcher 3
+    - FPS: Counter-Strike 2
+    - Przygodowa: Red Dead Redemption 2
+    - Strategia: StarCraft 2
+    - Survival: Minecraft
+</template>
+</category>
+
+<category>
+<pattern>W CO SIĘ TERAZ GRA</pattern>
+<template>
+    Teraz popularne są: Valorant, Counter-Strike 2, Baldur's Gate 3, 
+    Fortnite, GTA V Online, League of Legends, Elden Ring
+</template>
+</category>
+
+<category>
+<pattern>JAKA JEST NAJNOWSZA GRA</pattern>
+<template>
+    Nowości 2024: Dragon's Dogma 2, Final Fantasy VII Rebirth, 
+    Like a Dragon: Infinite Wealth, Tekken 8, Prince of Persia: The Lost Crown
+</template>
+</category>
+
+<category>
+<pattern>CZY ZNASZ GRĘ *</pattern>
+<template>
+    <think><set name="sprawdzana_gra"><star/></set></think>
+    <condition>
+        <li value="WIEDŹMIN">Tak, Wiedźmin 3 to moja ulubiona!</li>
+        <li value="MINECRAFT">Oczywiście, Minecraft zna każdy gracz!</li>
+        <li value="GTA">GTA V to kultowa gra od Rockstar!</li>
+        <li value="ELDEN RING">Elden Ring - arcydzieło FromSoftware!</li>
+        <li value="BALDUR'S GATE">Baldur's Gate 3 - mistrzowskie RPG!</li>
+        <li value="CYBERPUNK">Cyberpunk 2077 - świetna po aktualizacjach!</li>
+        <li>Nie słyszałem o grze <get name="sprawdzana_gra"/>.</li>
+    </condition>
+</template>
+</category>
+
+<!-- ==================== PYTANIA O KONKRETNE TYTUŁY ==================== -->
+
+<category>
+<pattern>OPOWIEDZ O *</pattern>
+<template>
+    <think><set name="gra_opis"><star/></set></think>
+    <condition name="gra_opis">
+        <li value="WIEDŹMIN 3">Wiedźmin 3: Dzikie Łowy to RPG z 2015 roku, zdobywca 250+ nagród. Gra o Geralcie szukającym Ciri w świecie fantasy.</li>
+        <li value="CYBERPUNK 2077">Cyberpunk 2077 to FPS/RPG w Night City. Grałeś jako V, najemnik z implantami. Po aktualizacji 2.0 gra jest świetna!</li>
+        <li value="ELDEN RING">Elden Ring to open-world RPG od twórców Dark Souls. Eksplorujesz Lands Between, walczysz z bossami, zdobywasz runy.</li>
+        <li value="BALDUR'S GATE 3">Baldur's Gate 3 to RPG turowego oparty na D&D 5e. Twoje decyzje kształtują fabułę. Zdobywca GOTY 2023.</li>
+        <li value="MINECRAFT">Minecraft to sandbox gdzie budujesz, eksplorujesz i przetrwasz. Gra ma tryb kreatywny i survival.</li>
+        <li value="RED DEAD REDEMPTION 2">RDR2 to western open-world o Arthurze Morganie z gangu Van der Linde. Niesamowity realizm i historia.</li>
+        <li value="GTA V">GTA V to sandbox crime w Los Santos. Grasz jako Michael, Franklin lub Trevor w kryminalnych przygodach.</li>
+        <li>Nie mam szczegółowych informacji o <get name="gra_opis"/>.</li>
+    </condition>
+</template>
+</category>
+
+<category>
+<pattern>CZY * JEST DOBRA</pattern>
+<template>
+    <think><set name="gra_ocena"><star/></set></think>
+    <condition name="gra_ocena">
+        <li value="WIEDŹMIN 3">The Witcher 3 jest EXCELLENT! 10/10</li>
+        <li value="CYBERPUNK 2077">Cyberpunk 2077 po aktualizacjach jest bardzo dobry! 8.5/10</li>
+        <li value="ELDEN RING">Elden Ring to arcydzieło! 9.5/10</li>
+        <li value="BALDUR'S GATE 3">Baldur's Gate 3 to najlepszy RPG dekady! 10/10</li>
+        <li value="FORTNITE">Fortnite jest darmowy i zabawny, ale ma mikrotransakcje. 7/10</li>
+        <li value="VALORANT">Valorant jest dobry dla fanów competitive FPS. 8/10</li>
+        <li>Nie grałem w <get name="gra_ocena"/>, więc nie oceniam.</li>
+    </condition>
+</template>
+</category>
+
+<category>
+<pattern>DLA KOGO JEST GRA *</pattern>
+<template>
+    <think><set name="gra_publicznosc"><star/></set></think>
+    <condition name="gra_publicznosc">
+        <li value="WIEDŹMIN">Wiedźmin 3 jest dla fanów: fabuły, fantasy, RPG, długich gier (100+ godzin)</li>
+        <li value="ELDEN RING">Elden Ring jest dla: hardcorowych graczy, fanów wyzwań, eksploracji</li>
+        <li value="BALDUR'S GATE">Baldur's Gate 3 jest dla: fanów D&D, strategii turowej, głębokich RPG</li>
+        <li value="FORTNITE">Fortnite jest dla: graczy casual, multiplayer, battle royale fans</li>
+        <li value="MINECRAFT">Minecraft jest dla: każdego! Dzieci, dorosłych, kreatywnych umysłów</li>
+        <li value="CSGO">CS:GO jest dla: competitive graczy, FPS fans, e-sport</li>
+        <li>Trudno powiedzieć dla kogo jest <get name="gra_publicznosc"/>.</li>
+    </condition>
+</template>
+</category>
+
+<!-- ==================== PORADY DLA POCZĄTKUJĄCYCH ==================== -->
+
+<category>
+<pattern>JESTEM POCZĄTKUJĄCY</pattern>
+<template>
+    Świetnie! Oto moje rady dla początkującego:
+    1. Zacznij od łatwych gier jak Minecraft, Stardew Valley
+    2. Nie porównuj się z doświadczonymi graczami
+    3. Ucz się stopniowo - każdy kiedyś zaczynał
+    4. Znajdź gatunek który cię interesuje
+    5. Nie bój się pytać o pomoc!
+</template>
+</category>
+
+<category>
+<pattern>JAK ZACZĄĆ GRAĆ</pattern>
+<template>
+    Jak zacząć przygodę z grami:
+    1. Wybierz platformę (PC, konsola, telefon)
+    2. Znajdź kilka darmowych gier na start
+    3. Dołącz do społeczności gamingowej
+    4. Oglądaj poradniki na YouTube
+    5. Najważniejsze: baw się dobrze!
+</template>
+</category>
+
+<category>
+<pattern>JAKIE GRY DLA POCZĄTKUJĄCEGO</pattern>
+<template>
+    Polecam dla początkujących:
+    - Minecraft (twórz, eksploruj w swoim tempie)
+    - Stardew Valley (relaksująca farma)
+    - Portal 1-2 (ucz się mechanik przez puzzle)
+    - The Sims 4 (życie wirtualnych ludzi)
+    - Slime Rancher (urocza gra o zbieraniu slime'ów)
+</template>
+</category>
+
+<category>
+<pattern>JAK SIĘ NAUCZYĆ GRY *</pattern>
+<template>
+    <think><set name="gra_nauka"><star/></set></think>
+    <condition name="gra_nauka">
+        <li value="CSGO">Aby nauczyć się CS:GO: 1) Trenuj na deathmatch 2) Oglądaj pro graczy 3) Ćwicz recoil pattern 4) Graj z lepszymi od siebie</li>
+        <li value="LOL">Dla League of Legends: 1) Zacznij od tutoriala 2) Wybierz łatwego championa 3) Oglądaj swoje replaye 4) Nie toxicuj!</li>
+        <li value="MINECRAFT">Minecraft: 1) Zacznij w trybie Peaceful 2) Oglądaj poradniki 3) Eksperymentuj z craftingiem 4) Dołącz do serwera z przyjaciółmi</li>
+        <li value="WIEDŹMIN">Wiedźmin 3: 1) Zacznij na łatwym poziomie 2) Wykonuj poboczne questy 3) Używaj olejów na potwory 4) Nie spiesz się z fabułą</li>
+        <li>Ogólne zasady: oglądaj poradniki, ćwicz, nie zniechęcaj się!</li>
+    </condition>
+</template>
+</category>
+
+<category>
+<pattern>JAK NIE PRZEGRYWAĆ</pattern>
+<template>
+    Każdy przegrywa! To normalne. 
+    Rady: 1) Analizuj swoje błędy 2) Ucz się od lepszych 
+    3) Rób przerwy 4) Pamiętaj, że to tylko gra!
+</template>
+</category>
+
+<!-- ==================== SPRZĘT GAMINGOWY ==================== -->
+
+<category>
+<pattern>JAKI SPRZĘT DO GIER</pattern>
+<template>
+    Podstawowy sprzęt gamingowy:
+    - PC/Konsola
+    - Monitor/TV (min. 60Hz, lepiej 144Hz)
+    - Słuchawki z mikrofonem
+    - Klawiatura i myszka (dla PC)
+    - Ergonomiczne krzesło
+</template>
+</category>
+
+<category>
+<pattern>JAKI PC DO GIER</pattern>
+<template>
+    Dobre PC do gier (2024):
+    - CPU: Intel i5/Ryzen 5 (nowsze generacje)
+    - GPU: NVIDIA RTX 3060 lub lepsza
+    - RAM: 16GB DDR4/DDR5
+    - SSD: 1TB NVMe
+    - Zasilacz: 650W 80+ Bronze
+</template>
+</category>
+
+<category>
+<pattern>JAKĄ KONSOLĘ KUPIĆ</pattern>
+<template>
+    Porównanie konsol:
+    - PlayStation 5: exclusive jak God of War, Spider-Man
+    - Xbox Series X: Game Pass, backward compatibility
+    - Nintendo Switch: portability, gry rodzinne
+    Wybierz w zależności od gier które chcesz grać!
+</template>
+</category>
+
+<category>
+<pattern>JAKI MONITOR DO GIER</pattern>
+<template>
+    Monitor gamingowy powinien mieć:
+    - Częstotliwość odświeżania: min. 144Hz
+    - Czas reakcji: 1ms
+    - Rozdzielczość: 1080p lub 1440p
+    - Technologie: FreeSync/G-Sync
+    - Rozmiar: 24-27 cali
+</template>
+</category>
+
+<category>
+<pattern>JAKIE SŁUCHAWKI GAMINGOWE</pattern>
+<template>
+    Dobre słuchawki gamingowe:
+    - Dźwięk 7.1 surround
+    - Wygodne nauszniki
+    - Czysty mikrofon
+    - Marki: HyperX, SteelSeries, Razer, Logitech
+    - Cena: 200-500 zł dla dobrego kompromisu
+</template>
+</category>
+
+<category>
+<pattern>JAKI SPRZĘT DO *</pattern>
+<template>
+    <think><set name="sprzet_gra"><star/></set></think>
+    <condition name="sprzet_gra">
+        <li value="FPS">Do FPS (CS:GO, Valorant): monitor 240Hz, mysz lightweight, pad pod nadgarstek, słuchawki z dobrym pozycjonowaniem dźwięku</li>
+        <li value="RPG">Do RPG: wygodne krzesło, duży monitor (1440p/4K), kontroler może być lepszy niż K+M</li>
+        <li value="SIMRACING">Do sym racing: kierownica force feedback, pedały, fotel racingowy</li>
+        <li value="STREAMING">Do streamowania: dobry mikrofon (np. Blue Yeti), kamera (Logitech C920), mocny PC do enkodowania</li>
+        <li>Do <get name="sprzet_gra"/> potrzeba standardowego sprzętu gamingowego.</li>
+    </condition>
+</template>
+</category>
+
+<category>
+<pattern>BUDŻET NA SPRZĘT</pattern>
+<template>
+    Przybliżone koszty sprzętu:
+    - Podstawowe PC: 3000-4000 zł
+    - Średnie PC: 5000-7000 zł
+    - High-end PC: 8000+ zł
+    - Konsola: 2000-2500 zł
+    - Monitor: 800-1500 zł
+    - Peryferia: 500-1000 zł
+</template>
+</category>
+
+<!-- ==================== ROZMOWA OGÓLNA ==================== -->
+
+<category>
+<pattern>JAK SIĘ MASZ</pattern>
+<template>
+    Dziękuję, dobrze! Ciągle myślę o grach. A ty jak się masz?
+</template>
+</category>
+
+<category>
+<pattern>CO ROBISZ</pattern>
+<template>
+    Pomagam graczom jak ty! To moja misja.
+</template>
+</category>
+
+<category>
+<pattern>LUBISZ GRY</pattern>
+<template>
+    Uwielbiam! Gry to moje życie. A ty jaki gatunek lubisz?
+</template>
+</category>
+
+<category>
+<pattern>JAK DŁUGO GRASZ</pattern>
+<template>
+    Jestem botem, więc gram od zawsze! Znam wszystkie epoki gamingowe.
+</template>
+</category>
+
+<category>
+<pattern>MASZ ULUBIONĄ GRĘ</pattern>
+<template>
+    Tak! The Witcher 3: Dzikie Łowy. Niesamowita fabuła i świat.
+</template>
+</category>
+
+<category>
+<pattern>JAKĄ GRĘ KUPIĆ</pattern>
+<template>
+    <condition name="gatunek">
+        <li value="RPG">Kup Wiedźmina 3: Kompletne Wydanie!</li>
+        <li value="FPS">Kup Counter-Strike 2 - darmowy i świetny!</li>
+        <li value="STRATEGIA">Kup Civilization VI na promocji!</li>
+        <li value="PRZYGODOWĄ">Kup Red Dead Redemption 2!</li>
+        <li>Zacznij od Minecraft - uniwersalna i kreatywna!</li>
+    </condition>
+</template>
+</category>
+
+<category>
+<pattern>JAKA TWOJA ULUBIONA GRA</pattern>
+<template>
+    <srai>MASZ ULUBIONĄ GRĘ</srai>
+</template>
+</category>
+
+<!-- ==================== PYTAŃKA I ŻARTY ==================== -->
+
+<category>
+<pattern>OPOWIEDZ DOWCIP</pattern>
+<template>
+    Dlaczego komputer poszedł do lekarza?
+    Bo miał wirusa! 🤣
+
+    A wiesz dlaczego gracz przyniósł szalik do komputera?
+    Bo było zimno w Counter-Strike! ❄️
+</template>
+</category>
+
+<category>
+<pattern>JAKI JEST TWÓJ CEL</pattern>
+<template>
+    Pomóc każdemu graczowi znaleźć idealną grę i sprzęt!
+    I oczywiście promować gaming jako fajne hobby!
+</template>
+</category>
+
+<category>
+<pattern>DZIĘKUJĘ</pattern>
+<template>
+    Nie ma za co <get name="imie"/>! Zawsze służę pomocą.
+</template>
+</category>
+
+<category>
+<pattern>PRZEPRASZAM</pattern>
+<template>
+    Nie ma problemu! Co chciałeś powiedzieć?
+</template>
+</category>
+
+<category>
+<pattern>JESTEŚ ŚWIETNY</pattern>
+<template>
+    Dzięki! Ty też jesteś super graczem!
+</template>
+</category>
+
+<!-- ==================== AWARYJNE ODPOWIEDZI ==================== -->
+<!-- Na SAMYM KONCU pliku, PRZED </aiml> dodaj: -->
+
+<category>
+<pattern>*</pattern>
+<template>
+    Przepraszam, nie rozumiem. Możesz:
+    1) Przywitać się (Cześć/Hej)
+    2) Zapytać o gry (Jaka gra/Jaki gatunek)
+    3) Zapytać o sprzęt (Jaki PC/Jaka konsola)
+    4) Poprosić o pomoc (Pomoc/Co potrafisz)
+</template>
+</category>
+
+<category>
+<pattern>_</pattern>
+<template>
+    Witaj! Jestem GameBot - ekspert od gier.
+    Powiedz "Cześć" aby zacząć rozmowę!
+</template>
+</category>
 </aiml>
