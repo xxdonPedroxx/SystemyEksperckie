@@ -25,13 +25,13 @@
 <category>
   <pattern>CZESC</pattern>
   <template>
-    Czesc! Jestem Twoim doradca growym. Wybieram gry lepiej niz loot w Diablo.
-    
-    Dostępne opcje:
-    - Napisz POLEC MI GRE aby rozpocząć rekomendację
-    - Napisz POMOC aby zobaczyć wszystkie komendy
-    - Napisz WLACZ HUMOR dla trybu humorystycznego
-    
+    Czesc! Jestem Twoim doradca growym. Wybieram gry lepiej niz loot w Diablo.<br/>
+    <br/>
+    Dostępne opcje:<br/>
+    - Napisz POLEC MI GRE aby rozpocząć rekomendację<br/>
+    - Napisz POMOC aby zobaczyć wszystkie komendy<br/>
+    - Napisz WLACZ HUMOR dla trybu humorystycznego<br/>
+    <br/>
     Co chcesz zrobić?
   </template>
 </category>
@@ -40,46 +40,44 @@
 <category>
   <pattern>POMOC</pattern>
   <template>
-    🎮 **DOSTĘPNE KOMENDY:** 🎮
-    
-    **🎯 REKOMENDACJE:**
-    - POLEC MI GRE - rozpoczęcie rekomendacji gier
-    - OPISZ [NAZWA GRY] - szczegóły o konkretnej grze (np. OPISZ WIEDZMIN 3)
-    
-    **⚙️ ZARZĄDZANIE PREFERENCJAMI:**
-    - ZMIEN GATUNEK - zmiana wybranego gatunku
-    - ZMIEN PLATFORME - zmiana platformy
-    - ZMIEN TRYB - zmiana trybu gry
-    - ZMIEN POZIOM - zmiana poziomu trudności
-    - ZMIEN NASTROJ - zmiana nastroju
-    - ZMIEN CENE - zmiana przedziału cenowego
-    - ZMIEN ROK - zmiana preferencji co do roku wydania
-    - POKAZ PREFERENCJE - aktualne ustawienia
-    - RESET PREFERENCJE - reset wszystkiego
-    
-    **🔄 NAWIGACJA:**
-    - COFNIJ - powrót do poprzedniego kroku
-    
-    **😄 FUNKCJE DODATKOWE:**
-    - WLACZ HUMOR - włączenie trybu humorystycznego
-    - WYLACZ HUMOR - wyłączenie trybu humorystycznego
-    - TRYB KROKOWY - włączenie trybu krokowego
-    - TRYB SZYBKI - włączenie trybu szybkiego
-    
-    **❤️ ULUBIONE:**
-    - MOJA ULUBIONA GRA TO [NAZWA] - dodanie gry do ulubionych
-    - ULUBIONE GRY - pokazanie ulubionych gier
-    
-    **📋 INFORMACJE:**
-    - LISTA GATUNKOW - dostępne gatunki gier
-    - LISTA GIER - informacja o dostępnych opisach
-    - ILE GIER ZNASZ - statystyki bota
-    
-    **❓ POMOC:**
-    - POMOC - pokazanie tej listy komend
-    - CZESC - przywitanie z botem
-    
-    Napisz dowolną komendę aby rozpocząć!
+    🎮 **DOSTĘPNE KOMENDY:** 🎮<br/>
+    <br/>
+    **🎯 REKOMENDACJE:**<br/>
+    - POLEC MI GRE - rozpoczęcie rekomendacji gier<br/>
+    - OPISZ [NAZWA GRY] - szczegóły o konkretnej grze (np. OPISZ WIEDZMIN 3)<br/>
+    <br/>
+    **⚙️ ZARZĄDZANIE PREFERENCJAMI:**<br/>
+    - ZMIEN GATUNEK - zmiana wybranego gatunku<br/>
+    - ZMIEN PLATFORME - zmiana platformy<br/>
+    - ZMIEN TRYB - zmiana trybu gry<br/>
+    - ZMIEN POZIOM - zmiana poziomu trudności<br/>
+    - ZMIEN NASTROJ - zmiana nastroju<br/>
+    - ZMIEN CENE - zmiana przedziału cenowego<br/>
+    - ZMIEN ROK - zmiana preferencji co do roku wydania<br/>
+    - POKAZ PREFERENCJE - aktualne ustawieniav
+    - RESET PREFERENCJE - reset wszystkiego<br/>
+    <br/>
+    **🔄 NAWIGACJA:**<br/>
+    - COFNIJ - powrót do poprzedniego kroku<br/>
+    <br/>
+    **😄 FUNKCJE DODATKOWE:**<br/>
+    - WLACZ HUMOR - włączenie trybu humorystycznego<br/>
+    - WYLACZ HUMOR - wyłączenie trybu humorystycznego<br/>
+    <br/>
+    **❤️ ULUBIONE:**<br/>
+    - MOJA ULUBIONA GRA TO [NAZWA] - dodanie gry do ulubionych<br/>
+    - ULUBIONE GRY - pokazanie ulubionych gier<br/>
+    <br/>
+    **📋 INFORMACJE:**<br/>
+    - LISTA GATUNKOW - dostępne gatunki gier<br/>
+    - LISTA GIER - informacja o dostępnych opisach<br/>
+    - ILE GIER ZNASZ - statystyki bota<br/>
+    <br/>
+    **❓ POMOC:**<br/>
+    - POMOC - pokazanie tej listy komend<br/>
+    - CZESC - przywitanie z botem<br/>
+    <br/>
+    Napisz dowolną komendę aby rozpocząć!<br/>
   </template>
 </category>
 
@@ -104,18 +102,18 @@ Uzywaj ZMIEN * aby zmienic dowolna opcje.
 <pattern>ZMIEN GATUNEK</pattern>
 <template>
 <think><set name="gatunek">NIEZNANY</set></think>
-Jaki gatunek preferujesz?
-Dostępne opcje:
-- RPG
-- FPS
-- STRATEGIA
-- PRZYGODOWA
-- INDIE
-- HORROR
-- WYSCIGI
-- SYMULATOR
-- MOBA
-- BATTLE ROYALE
+Jaki gatunek preferujesz?<br/>
+Dostępne opcje:<br/>
+- RPG<br/>
+- FPS<br/>
+- STRATEGIAv
+- PRZYGODOWA<br/>
+- INDIEv
+- HORROR<br/>
+- WYSCIGI<br/>
+- SYMULATOR<br/>
+- MOBA<br/>
+- BATTLE ROYALE<br/>
 - Możesz też podać dwa np. RPG I FPS
 </template>
 </category>
@@ -124,15 +122,15 @@ Dostępne opcje:
 <pattern>ZMIEN PLATFORME</pattern>
 <template>
 <think><set name="platforma">NIEZNANA</set></think>
-Na jaka platforme grasz?
-Dostępne opcje:
-- PC
-- PLAYSTATION
-- XBOX
-- SWITCH
-- MOBILE
-- PC_I_PS (obydwie)
-- PLAYSTATION LUB XBOX
+Na jaka platforme grasz?<br/>
+Dostępne opcje:<br/>
+- PC<br/>
+- PLAYSTATION<br/>
+- XBOX<br/>
+- SWITCH<br/>
+- MOBILE<br/>
+- PC_I_PS (obydwie)<br/>
+- PLAYSTATION LUB XBOX<br/>
 - PC LUB SWITCH
 </template>
 </category>
@@ -141,9 +139,9 @@ Dostępne opcje:
 <pattern>ZMIEN TRYB</pattern>
 <template>
 <think><set name="tryb">NIEZNANY</set></think>
-Wybierz tryb:
-- SINGLEPLAYER
-- MULTIPLAYER
+Wybierz tryb:<br/>
+- SINGLEPLAYER<br/>
+- MULTIPLAYER<br/>
 - KOOPERACJA
 </template>
 </category>
@@ -152,9 +150,9 @@ Wybierz tryb:
 <pattern>ZMIEN POZIOM</pattern>
 <template>
 <think><set name="poziom">NISKI</set></think>
-Jaki poziom trudnosci?
-- NISKI
-- SREDNI
+Jaki poziom trudnosci?<br/>
+- NISKI<br/>
+- SREDNI<br/>
 - WYSOKI
 </template>
 </category>
@@ -163,10 +161,10 @@ Jaki poziom trudnosci?
 <pattern>ZMIEN NASTROJ</pattern>
 <template>
 <think><set name="nastroj">NEUTRALNY</set></think>
-W jakim jestes nastroju?
-- FABULARNY
-- RELAKS
-- RYWALIZACJA
+W jakim jestes nastroju<br/>
+- FABULARNY<br/>
+- RELAKS<br/>
+- RYWALIZACJA<br/>
 - HORROR
 </template>
 </category>
@@ -175,12 +173,12 @@ W jakim jestes nastroju?
 <pattern>ZMIEN CENE</pattern>
 <template>
 <think><set name="cena">DOWOLNA</set></think>
-Jaki przedzial cenowy?
-- DARMOWA
-- DO_50
-- DO_100
-- DO_200
-- POWYZEJ_200
+Jaki przedzial cenowy?<br/>
+- DARMOWA<br/>
+- DO_50<br/>
+- DO_100<br/>
+- DO_200<br/>
+- POWYZEJ_200<br/>
 - DOWOLNA
 </template>
 </category>
@@ -189,9 +187,9 @@ Jaki przedzial cenowy?
 <pattern>ZMIEN ROK</pattern>
 <template>
 <think><set name="rok_wydania">DOWOLNY</set></think>
-Preferujesz gry:
-- NOWE (po 2020)
-- KLASYKI (przed 2015)
+Preferujesz gry:<br/>
+- NOWE (po 2020)<br/>
+- KLASYKI (przed 2015)<br/>
 - DOWOLNY
 </template>
 </category>
@@ -206,13 +204,13 @@ Preferujesz gry:
 <set name="historia"></set>
 <set name="platforma">NIEZNANA</set>
 </think>
-OK, wracamy do wyboru platformy.
-Dostępne opcje:
-- PC
-- PLAYSTATION
-- XBOX
-- SWITCH
-- MOBILE
+OK, wracamy do wyboru platformy.<br/>
+Dostępne opcje:<br/>
+- PC<br/>
+- PLAYSTATION<br/>
+- XBOX<br/>
+- SWITCH<br/>
+- MOBILE<br/>
 - PC_I_PS
 </li>
 <li value="TRYB">
@@ -220,10 +218,10 @@ Dostępne opcje:
 <set name="historia">PLATFORMA</set>
 <set name="tryb">NIEZNANY</set>
 </think>
-OK, wracamy do wyboru trybu.
-Dostępne opcje:
-- SINGLEPLAYER
-- MULTIPLAYER
+OK, wracamy do wyboru trybu.<br/>
+Dostępne opcje:<br/>
+- SINGLEPLAYER<br/>
+- MULTIPLAYER<br/>
 - KOOPERACJA
 </li>
 <li value="POZIOM">
@@ -231,10 +229,10 @@ Dostępne opcje:
 <set name="historia">TRYB</set>
 <set name="poziom">NISKI</set>
 </think>
-OK, wracamy do wyboru poziomu.
-Dostępne opcje:
-- NISKI
-- SREDNI
+OK, wracamy do wyboru poziomu.<br/>
+Dostępne opcje:<br/>
+- NISKI<br/>
+- SREDNI<br/>
 - WYSOKI
 </li>
 <li value="NASTROJ">
@@ -242,11 +240,11 @@ Dostępne opcje:
 <set name="historia">POZIOM</set>
 <set name="nastroj">NEUTRALNY</set>
 </think>
-OK, wracamy do wyboru nastroju.
-Dostępne opcje:
-- FABULARNY
-- RELAKS
-- RYWALIZACJA
+OK, wracamy do wyboru nastroju.<br/>
+Dostępne opcje:<br/>
+- FABULARNY<br/>
+- RELAKS<br/>
+- RYWALIZACJA<br/>
 - HORROR
 </li>
 <li value="CENA">
@@ -254,13 +252,13 @@ Dostępne opcje:
 <set name="historia">NASTROJ</set>
 <set name="cena">DOWOLNA</set>
 </think>
-OK, wracamy do wyboru ceny.
-Dostępne opcje:
-- DARMOWA
-- DO_50
-- DO_100
-- DO_200
-- POWYZEJ_200
+OK, wracamy do wyboru ceny.<br/>
+Dostępne opcje:<br/>
+- DARMOWA<br/>
+- DO_50<br/>
+- DO_100v
+- DO_200<br/>
+- POWYZEJ_200<br/>
 - DOWOLNA
 </li>
 <li value="ROK">
@@ -268,10 +266,10 @@ Dostępne opcje:
 <set name="historia">CENA</set>
 <set name="rok_wydania">DOWOLNY</set>
 </think>
-OK, wracamy do wyboru roku.
-Dostępne opcje:
-- NOWE
-- KLASYKI
+OK, wracamy do wyboru roku.<br/>
+Dostępne opcje:<br/>
+- NOWE<br/>
+- KLASYKI<br/>
 - DOWOLNY
 </li>
 <li>
@@ -328,18 +326,19 @@ Tryb szybki wlaczony. Mozesz walic preferencje jak combo w Tekkenie.
 </think>
 Zaczynamy rekomendację! 🎮
 
-Jaki gatunek lubisz?
-Dostępne opcje:
-- RPG
-- FPS
-- STRATEGIA
-- PRZYGODOWA
-- INDIE
-- HORROR
-- WYSCIGI
-- SYMULATOR
-- MOBA
-- BATTLE ROYALE
+Jaki gatunek lubisz?<br/>
+Dostępne opcje:<br/>
+- RPG<br/>
+- FPS<br/>
+- STRATEGIA<br/>
+- PRZYGODOWA<br/>
+- INDIE<br/>
+- HORROR<br/>
+- WYSCIGI<br/>
+- SYMULATOR<br/>
+- MOBA<br/>
+- BATTLE ROYALE<br/>
+Napisz LUBIE GRY:<br/>
 
 Możesz też podać dwa gatunki, np. "RPG I FPS"
 </template>
@@ -353,14 +352,14 @@ Możesz też podać dwa gatunki, np. "RPG I FPS"
 <set name="gatunek"><star index="1"/>_I_<star index="2"/></set>
 </think>
 OK, zapisuje gatunki <star index="1"/> i <star index="2"/>.
-
-Na jaka platforme grasz?
-Dostępne opcje:
-- PC
-- PLAYSTATION
-- XBOX
-- SWITCH
-- MOBILE
+<br/>
+Na jaka platforme grasz?<br/>
+Dostępne opcje:<br/>
+- PC<br/>
+- PLAYSTATION<br/>
+- XBOX<br/>
+- SWITCH<br/>
+- MOBILE<br/>
 - PC_I_PS
 </template>
 </category>
@@ -370,14 +369,14 @@ Dostępne opcje:
 <template>
 <think><set name="gatunek"><star/></set></think>
 OK, zapisuje gatunek <get name="gatunek"/>.
-
-Na jaka platforme grasz?
-Dostępne opcje:
-- PC
-- PLAYSTATION
-- XBOX
-- SWITCH
-- MOBILE
+<br/>
+Na jaka platforme grasz?<br/>
+Dostępne opcje:<br/>
+- PC<br/>
+- PLAYSTATION<br/>
+- XBOX<br/>
+- SWITCH<br/>
+- MOBILE<br/>
 - PC_I_PS
 </template>
 </category>
@@ -386,14 +385,14 @@ Dostępne opcje:
 <pattern>RPG I FPS</pattern>
 <template>
 <think><set name="gatunek">RPG_I_FPS</set></think>
-Dwa w jednym! RPG i FPS.
-
-Na jaka platforme grasz?
-Dostępne opcje:
-- PC
-- PLAYSTATION
-- XBOX
-- SWITCH
+Dwa w jednym! RPG i FPS.<br/>
+<br/>
+Na jaka platforme grasz?<br/>
+Dostępne opcje:<br/>
+- PC<br/>
+- PLAYSTATION<br/>
+- XBOX<br/>
+- SWITCH<br/>
 - MOBILE
 </template>
 </category>
@@ -402,14 +401,14 @@ Dostępne opcje:
 <pattern>FPS I STRATEGIA</pattern>
 <template>
 <think><set name="gatunek">FPS_I_STRATEGIA</set></think>
-Mieszanka wybuchowa! FPS i strategia.
-
-Na jaka platforme grasz?
-Dostępne opcje:
-- PC
-- PLAYSTATION
-- XBOX
-- SWITCH
+Mieszanka wybuchowa! FPS i strategia.<br/>
+<br/>
+Na jaka platforme grasz?<br/>
+Dostępne opcje:<br/>
+- PC<br/>
+- PLAYSTATION<br/>
+- XBOX<br/>
+- SWITCH<br/>
 - MOBILE
 </template>
 </category>
@@ -418,14 +417,14 @@ Dostępne opcje:
 <pattern>RPG I PRZYGODOWA</pattern>
 <template>
 <think><set name="gatunek">RPG_I_PRZYGODOWA</set></think>
-RPG z przygodowa - klasyk!
-
-Na jaka platforme grasz?
-Dostępne opcje:
-- PC
-- PLAYSTATION
-- XBOX
-- SWITCH
+RPG z przygodowa - klasyk!<br/>
+<br/>
+Na jaka platforme grasz?<br/>
+Dostępne opcje:<br/>
+- PC<br/>
+- PLAYSTATION<br/>
+- XBOX<br/>
+- SWITCH<br/>
 - MOBILE
 </template>
 </category>
@@ -438,11 +437,11 @@ Dostępne opcje:
 <set name="platforma">PC_I_PS</set>
 <set name="historia">PLATFORMA</set>
 </think>
-OK, grasz na PC lub PlayStation.
-
-Wybierz tryb:
-- SINGLEPLAYER
-- MULTIPLAYER
+OK, grasz na PC lub PlayStation.<br/>
+<br/>
+Wybierz tryb:<br/>
+- SINGLEPLAYER<br/>
+- MULTIPLAYER<br/>
 - KOOPERACJA
 </template>
 </category>
@@ -454,11 +453,11 @@ Wybierz tryb:
 <set name="platforma">PS_I_XBOX</set>
 <set name="historia">PLATFORMA</set>
 </think>
-OK, grasz na PlayStation lub Xbox.
-
-Wybierz tryb:
-- SINGLEPLAYER
-- MULTIPLAYER
+OK, grasz na PlayStation lub Xbox.<br/>
+<br/>
+Wybierz tryb:<br/>
+- SINGLEPLAYER<br/>
+- MULTIPLAYER<br/>
 - KOOPERACJA
 </template>
 </category>
@@ -470,11 +469,11 @@ Wybierz tryb:
 <set name="platforma">PC_I_SWITCH</set>
 <set name="historia">PLATFORMA</set>
 </think>
-OK, grasz na PC lub Switch.
-
-Wybierz tryb:
-- SINGLEPLAYER
-- MULTIPLAYER
+OK, grasz na PC lub Switch.<br/>
+<br/>
+Wybierz tryb:<br/>
+- SINGLEPLAYER<br/>
+- MULTIPLAYER<br/>
 - KOOPERACJA
 </template>
 </category>
@@ -487,11 +486,11 @@ Wybierz tryb:
 <set name="platforma">PC</set>
 <set name="historia">PLATFORMA</set>
 </think>
-PC. Krolestwo modow, 144 FPS i wiecznego upgradeowania sprzetu.
-
-Wybierz tryb:
-- SINGLEPLAYER
-- MULTIPLAYER
+PC. Krolestwo modow, 144 FPS i wiecznego upgradeowania sprzetu.<br/>
+<br/>
+Wybierz tryb:<br/>
+- SINGLEPLAYER<br/>
+- MULTIPLAYER<br/>
 - KOOPERACJA
 </template>
 </category>
@@ -503,11 +502,11 @@ Wybierz tryb:
 <set name="platforma">PLAYSTATION</set>
 <set name="historia">PLATFORMA</set>
 </think>
-PlayStation. Dom ekskluzywnych fabularnych perelek.
-
-Wybierz tryb:
-- SINGLEPLAYER
-- MULTIPLAYER
+PlayStation. Dom ekskluzywnych fabularnych perelek.<br/>
+<br/>
+Wybierz tryb:<br/>
+- SINGLEPLAYER<br/>
+- MULTIPLAYER<br/>
 - KOOPERACJA
 </template>
 </category>
@@ -519,11 +518,11 @@ Wybierz tryb:
 <set name="platforma">XBOX</set>
 <set name="historia">PLATFORMA</set>
 </think>
-Xbox. Game Pass i zielone swiatlo dla graczy.
-
-Wybierz tryb:
-- SINGLEPLAYER
-- MULTIPLAYER
+Xbox. Game Pass i zielone swiatlo dla graczy.<br/>
+<br/>
+Wybierz tryb:<br/>
+- SINGLEPLAYER<br/>
+- MULTIPLAYER<br/>
 - KOOPERACJA
 </template>
 </category>
@@ -535,11 +534,11 @@ Wybierz tryb:
 <set name="platforma">SWITCH</set>
 <set name="historia">PLATFORMA</set>
 </think>
-Switch. Konsola ktora udowadnia ze 30 FPS tez moze byc fajne.
-
-Wybierz tryb:
-- SINGLEPLAYER
-- MULTIPLAYER
+Switch. Konsola ktora udowadnia ze 30 FPS tez moze byc fajne.<br/>
+<br/>
+Wybierz tryb:<br/>
+- SINGLEPLAYER<br/>
+- MULTIPLAYER<br/>
 - KOOPERACJA
 </template>
 </category>
@@ -551,11 +550,11 @@ Wybierz tryb:
 <set name="platforma">MOBILE</set>
 <set name="historia">PLATFORMA</set>
 </think>
-Mobile. Idealne do grania w autobusie i ignorowania ludzi.
-
-Wybierz tryb:
-- SINGLEPLAYER
-- MULTIPLAYER
+Mobile. Idealne do grania w autobusie i ignorowania ludzi.<br/>
+<br/>
+Wybierz tryb:<br/>
+- SINGLEPLAYER<br/>
+- MULTIPLAYER<br/>
 - KOOPERACJA
 </template>
 </category>
@@ -568,10 +567,10 @@ Wybierz tryb:
 <set name="tryb">SINGLEPLAYER</set>
 <set name="historia">TRYB</set>
 </think>
-Jaki poziom trudnosci?
-Dostępne opcje:
-- NISKI
-- SREDNI
+Jaki poziom trudnosci?<br/>
+Dostępne opcje:<br/>
+- NISKI<br/>
+- SREDNI<br/>
 - WYSOKI
 </template>
 </category>
@@ -583,10 +582,10 @@ Dostępne opcje:
 <set name="tryb">MULTIPLAYER</set>
 <set name="historia">TRYB</set>
 </think>
-Jaki poziom trudnosci?
-Dostępne opcje:
-- NISKI
-- SREDNI
+Jaki poziom trudnosci?<br/>
+Dostępne opcje:<br/>
+- NISKI<br/>
+- SREDNI<br/>
 - WYSOKI
 </template>
 </category>
@@ -598,12 +597,12 @@ Dostępne opcje:
 <set name="tryb">KOOPERACJA</set>
 <set name="historia">TRYB</set>
 </think>
-Tryb kooperacyjny! Gramy z przyjaciółmi.
-
-Jaki poziom trudnosci?
-Dostępne opcje:
-- NISKI
-- SREDNI
+Tryb kooperacyjny! Gramy z przyjaciółmi.<br/>
+<br/>
+Jaki poziom trudnosci?<br/>
+Dostępne opcje:<br/>
+- NISKI<br/>
+- SREDNI<br/>
 - WYSOKI
 </template>
 </category>
@@ -616,15 +615,15 @@ Dostępne opcje:
 <set name="poziom">NISKI</set>
 <set name="historia">POZIOM</set>
 </think>
-OK.
-
-Jaki przedzial cenowy?
-Dostępne opcje:
-- DARMOWA
-- DO_50
-- DO_100
-- DO_200
-- POWYZEJ_200
+OK.<br/>
+<br/>
+Jaki przedzial cenowy?<br/>
+Dostępne opcje:<br/>
+- DARMOWA<br/>
+- DO_50<br/>
+- DO_100<br/>
+- DO_200<br/>
+- POWYZEJ_200<br/>
 - DOWOLNA
 </template>
 </category>
@@ -636,15 +635,15 @@ Dostępne opcje:
 <set name="poziom">SREDNI</set>
 <set name="historia">POZIOM</set>
 </think>
-OK.
-
-Jaki przedzial cenowy?
-Dostępne opcje:
-- DARMOWA
-- DO_50
-- DO_100
-- DO_200
-- POWYZEJ_200
+OK.<br/>
+<br/>
+Jaki przedzial cenowy?<br/>
+Dostępne opcje:<br/>
+- DARMOWA<br/>
+- DO_50<br/>
+- DO_100<br/>
+- DO_200<br/>
+- POWYZEJ_200<br/>
 - DOWOLNA
 </template>
 </category>
@@ -656,15 +655,15 @@ Dostępne opcje:
 <set name="poziom">WYSOKI</set>
 <set name="historia">POZIOM</set>
 </think>
-Wysoki poziom. Lubie ludzi ktorzy cierpia z wyboru.
-
-Jaki przedzial cenowy?
-Dostępne opcje:
-- DARMOWA
-- DO_50
-- DO_100
-- DO_200
-- POWYZEJ_200
+Wysoki poziom. Lubie ludzi ktorzy cierpia z wyboru.<br/>
+<br/>
+Jaki przedzial cenowy?<br/>
+Dostępne opcje:<br/>
+- DARMOWA<br/>
+- DO_50<br/>
+- DO_100<br/>
+- DO_200<br/>
+- POWYZEJ_200<br/>
 - DOWOLNA
 </template>
 </category>
@@ -677,11 +676,11 @@ Dostępne opcje:
 <set name="cena">DARMOWA</set>
 <set name="historia">CENA</set>
 </think>
-Darmowe gry to najlepsze!
-
-Preferujesz gry:
-- NOWE (po 2020)
-- KLASYKI (przed 2015)
+Darmowe gry to najlepsze!<br/>
+<br/>
+Preferujesz gry:<br/>
+- NOWE (po 2020)<br/>
+- KLASYKI (przed 2015)<br/>
 - DOWOLNY
 </template>
 </category>
@@ -693,11 +692,11 @@ Preferujesz gry:
 <set name="cena">DO_50</set>
 <set name="historia">CENA</set>
 </think>
-Do 50 zlotych.
-
-Preferujesz gry:
-- NOWE (po 2020)
-- KLASYKI (przed 2015)
+Do 50 zlotych.<br/>
+<br/>
+Preferujesz gry:<br/>
+- NOWE (po 2020)<br/>
+- KLASYKI (przed 2015)<br/>
 - DOWOLNY
 </template>
 </category>
@@ -709,11 +708,11 @@ Preferujesz gry:
 <set name="cena">DO_100</set>
 <set name="historia">CENA</set>
 </think>
-Do 100 zlotych.
-
-Preferujesz gry:
-- NOWE (po 2020)
-- KLASYKI (przed 2015)
+Do 100 zlotych.<br/>
+<br/>
+Preferujesz gry:<br/>
+- NOWE (po 2020)<br/>
+- KLASYKI (przed 2015)<br/>
 + DOWOLNY
 </template>
 </category>
@@ -725,11 +724,11 @@ Preferujesz gry:
 <set name="cena">DO_200</set>
 <set name="historia">CENA</set>
 </think>
-Do 200 zlotych.
-
-Preferujesz gry:
-- NOWE (po 2020)
-- KLASYKI (przed 2015)
+Do 200 zlotych.<br/>
+<br/>
+Preferujesz gry:<br/>
+- NOWE (po 2020)<br/>
+- KLASYKI (przed 2015)<br/>
 - DOWOLNY
 </template>
 </category>
@@ -741,11 +740,11 @@ Preferujesz gry:
 <set name="cena">POWYZEJ_200</set>
 <set name="historia">CENA</set>
 </think>
-Powyej 200 zl - ktoś ma budżet!
-
-Preferujesz gry:
-- NOWE (po 2020)
-- KLASYKI (przed 2015)
+Powyej 200 zl - ktoś ma budżet!<br/>
+<br/>
+Preferujesz gry:<br/>
+- NOWE (po 2020)<br/>
+- KLASYKI (przed 2015)<br/>
 - DOWOLNY
 </template>
 </category>
@@ -757,11 +756,11 @@ Preferujesz gry:
 <set name="cena">DOWOLNA</set>
 <set name="historia">CENA</set>
 </think>
-Budżet nie gra roli.
-
-Preferujesz gry:
-- NOWE (po 2020)
-- KLASYKI (przed 2015)
+Budżet nie gra roli.<br/>
+<br/>
+Preferujesz gry:<br/>
+- NOWE (po 2020)<br/>
+- KLASYKI (przed 2015)<br/>
 - DOWOLNY
 </template>
 </category>
@@ -774,13 +773,13 @@ Preferujesz gry:
 <set name="rok_wydania">NOWE</set>
 <set name="historia">ROK</set>
 </think>
-NOWE gry. Ostatnio wydane hity.
-
-W jakim jestes nastroju?
-Dostępne opcje:
-- FABULARNY
-- RELAKS
-- RYWALIZACJA
+NOWE gry. Ostatnio wydane hity.<br/>
+<br/>
+W jakim jestes nastroju?<br/>
+Dostępne opcje:<br/>
+- FABULARNY<br/>
+- RELAKS<br/>
+- RYWALIZACJA<br/>
 - HORROR
 </template>
 </category>
@@ -792,13 +791,13 @@ Dostępne opcje:
 <set name="rok_wydania">KLASYKI</set>
 <set name="historia">ROK</set>
 </think>
-KLASYKI. Gry które przeszly do historii.
-
-W jakim jestes nastroju?
-Dostępne opcje:
-- FABULARNY
-- RELAKS
-- RYWALIZACJA
+KLASYKI. Gry które przeszly do historii.<br/>
+<br/>
+W jakim jestes nastroju?<br/>
+Dostępne opcje:<br/>
+- FABULARNY<br/>
+- RELAKS<br/>
+- RYWALIZACJA<br/>
 - HORROR
 </template>
 </category>
@@ -810,11 +809,11 @@ Dostępne opcje:
 <set name="rok_wydania">DOWOLNY</set>
 <set name="historia">ROK</set>
 </think>
-W jakim jestes nastroju?
-Dostępne opcje:
-- FABULARNY
-- RELAKS
-- RYWALIZACJA
+W jakim jestes nastroju?<br/>
+Dostępne opcje:<br/>
+- FABULARNY<br/>
+- RELAKS<br/>
+- RYWALIZACJA<br/>
 - HORROR
 </template>
 </category>
@@ -993,17 +992,17 @@ A tak poza tym, pamietaj: jesli gra jest trudna, to nie Ty jestes slaby, tylko g
 <!-- INFORMACJE DODATKOWE -->
 <condition name="tryb_dialogu">
 <li value="KROKOWY">
-Mozesz teraz: 
-- Napisac OPISZ NAZWE GRY dla szczegółów
-- Napisac ZMIEN * aby zmienic preferencje
-- Napisac COFNIJ aby wrocic
+Mozesz teraz: <br/>
+- Napisac OPISZ NAZWE GRY dla szczegółów<br/>
+- Napisac ZMIEN * aby zmienic preferencje<br/>
+- Napisac COFNIJ aby wrocic<br/>
 - Napisac POLEC MI GRE dla nowej rekomendacji
 </li>
 <li value="SZYBKI">
-Koniec rekomendacji!
-- OPISZ NAZWE GRY
-- ZMIEN *
-- COFNIJ
+Koniec rekomendacji!<br/>
+- OPISZ NAZWE GRY<br/>
+- ZMIEN *<br/>
+- COFNIJ<br/>
 - POLEC MI GRE
 </li>
 </condition>
@@ -1026,30 +1025,5 @@ Twoje ulubione gry to <get name="ulubione"/>. Ladna kolekcja, jak biblioteka Ste
 </template>
 </category>
 
-<category>
-<pattern>LISTA GATUNKOW</pattern>
-<template>
-Dostepne gatunki:
-- RPG
-- FPS
-- STRATEGIA
-- PRZYGODOWA
-- INDIE
-- HORROR
-- WYSCIGI
-- SYMULATOR
-- MOBA
-- BATTLE ROYALE
-
-Mozesz tez podac dwa gatunki np. RPG I FPS.
-</template>
-</category>
-
-<category>
-<pattern>ILE GIER ZNASZ</pattern>
-<template>
-Znam okolo 100 gier. W sam raz zeby nie miec backlogu jak kazdy gracz.
-</template>
-</category>
 
 </aiml>

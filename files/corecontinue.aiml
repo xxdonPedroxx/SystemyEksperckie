@@ -2,6 +2,32 @@
 <aiml version="2.0">
 
 <category>
+<pattern>LISTA GATUNKOW</pattern>
+<template>
+Dostepne gatunki:
+- RPG
+- FPS
+- STRATEGIA
+- PRZYGODOWA
+- INDIE
+- HORROR
+- WYSCIGI
+- SYMULATOR
+- MOBA
+- BATTLE ROYALE
+
+Mozesz tez podac dwa gatunki np. RPG I FPS.
+</template>
+</category>
+
+<category>
+<pattern>ILE GIER ZNASZ</pattern>
+<template>
+Znam okolo 100 gier. W sam raz zeby nie miec backlogu jak kazdy gracz.
+</template>
+</category>
+
+<category>
 <pattern>LISTA GIER</pattern>
 <template>
 Mam opisy gier:
