@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+  <pattern>OPISZ DOOM ETERNAL</pattern>
+  <template>
+    Doom Eternal to bardzo szybki FPS nastawiony na agresywna walke, mobilnosc i efektowna akcje.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ METRO EXODUS</pattern>
+  <template>
+    Metro Exodus to FPS z elementami survivalu i fabuly, osadzony w postapokaliptycznej Rosji.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ HALF LIFE 2</pattern>
+  <template>
+    Half Life 2 to klasyczny FPS z silnym naciskiem na fabule, fizyke i kreatywne zagadki.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ CS2</pattern>
+  <template>
+    Counter Strike 2 to taktyczny FPS 5 na 5, gdzie liczy sie celne strzelanie, ekonomia i wspolpraca.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ VALORANT</pattern>
+  <template>
+    Valorant to taktyczny FPS laczacy precyzyjne strzelanie z umiejetnosciami postaci.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ OVERWATCH 2</pattern>
+  <template>
+    Overwatch 2 to hero shooter, w ktorym kazda postac ma unikalne zdolnosci i role w druzynie.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ BATTLEFIELD 1</pattern>
+  <template>
+    Battlefield 1 to FPS osadzony w realiach I wojny swiatowej, z wielkimi bitwami i pojazdami.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ CALL OF DUTY MODERN WARFARE</pattern>
+  <template>
+    Call of Duty Modern Warfare to dynamiczny FPS z kampania fabularna i rozbudowanym multiplayerem.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ TITANFALL 2</pattern>
+  <template>
+    Titanfall 2 laczy szybka walke piechoty z mechami Titan, a kampania jest bardzo chwalona.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ FAR CRY 5</pattern>
+  <template>
+    Far Cry 5 to FPS z otwartym swiatem, w ktorym walczysz z fanatyczna sekta w USA.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ CIVILIZATION VI</pattern>
+  <template>
+    Civilization VI to turowa strategia, w ktorej prowadzisz cywilizacje od starozytnosci do przyszlosci.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ EU4</pattern>
+  <template>
+    Europa Universalis IV to grand strategy, gdzie zarzadzasz panstwem od sredniowiecza do nowozytnosci.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ CRUSADER KINGS 3</pattern>
+  <template>
+    Crusader Kings 3 to strategia skupiona na dynastii, intrygach i polityce feudalnej.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ TOTAL WAR WARHAMMER 3</pattern>
+  <template>
+    Total War Warhammer 3 laczy strategiczna mape kampanii z taktycznymi bitwami w czasie rzeczywistym.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ STARCRAFT 2</pattern>
+  <template>
+    Starcraft 2 to RTS science fiction z trzema rasami o zupelnie innym stylu gry.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ AGE OF EMPIRES 4</pattern>
+  <template>
+    Age of Empires 4 to RTS historyczny, w ktorym rozwijasz cywilizacje przez epoki.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ XCOM 2</pattern>
+  <template>
+    XCOM 2 to taktyczna strategia turowa, w ktorej dowodzisz oddzialem walczacym z obcymi.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ FROSTPUNK</pattern>
+  <template>
+    Frostpunk to strategia i survival city builder, gdzie zarzadzasz ostatnim miastem w lodowym swiecie.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ CITIES SKYLINES</pattern>
+  <template>
+    Cities Skylines to city builder, w ktorym budujesz i zarzadzasz wlasnym miastem.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ RIMWORLD</pattern>
+  <template>
+    RimWorld to kolonia survival z generowana narracja, gdzie zarzadzasz grupa rozbitkow.
+  </template>
+</category>
+</aiml>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+<pattern>OPISZ DEEP ROCK GALACTIC</pattern>
+<template>
+Deep Rock Galactic to kooperacyjny FPS, w którym górnicze krasnoludy wydobywają surowce z niebezpiecznych planet.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ IT TAKES TWO</pattern>
+<template>
+It Takes Two to przygodowa gra kooperacyjna, w której dwoje graczy musi wspolnie rozwiazywac zagadki.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ OVERCOOKED 2</pattern>
+<template>
+Overcooked 2 to chaotyczna gra kooperacyjna o gotowaniu, która testuje przyjaźń i koordynację.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ LEFT 4 DEAD 2</pattern>
+<template>
+Left 4 Dead 2 to kooperacyjny FPS, w którym czterech graczy walczy z hordami zombie.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ MONSTER HUNTER WORLD</pattern>
+<template>
+Monster Hunter World to gra o polowaniu na potwory w grupie do 4 graczy, z rozbudowanym craftowaniem.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ BORDERLANDS 3</pattern>
+<template>
+Borderlands 3 to FPS RPG z kooperacją do 4 graczy, pełen humoru i milionów przedmiotów do zdobycia.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ SEA OF THIEVES</pattern>
+<template>
+Sea of Thieves to kooperacyjna gra przygodowa o piratach, gdzie załoga wspólnie żegluje i zdobywa skarby.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ DIVINITY ORIGINAL SIN 2</pattern>
+<template>
+Divinity Original Sin 2 to taktyczne RPG z kooperacją, gdzie do 4 graczy wspólnie rozwija historię i walczy.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ PHASMOPHOBIA</pattern>
+<template>
+Phasmophobia to kooperacyjny horror, w którym do 4 graczy bada nawiedzone lokacje jako łowcy duchów.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ PAYDAY 2</pattern>
+<template>
+Payday 2 to kooperacyjny FPS o napadach na banki, z rozbudowanym planowaniem akcji i customizacją postaci.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ VALHEIM</pattern>
+<template>
+Valheim to survival kooperacyjny w stylu wikingów, z budowaniem baz, eksploracją i walką z mitologicznymi stworami.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ THE FOREST</pattern>
+<template>
+The Forest to survival horror z kooperacją, gdzie rozbitkowie muszą przetrwać na wyspie pełnej kanibali.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ DYING LIGHT</pattern>
+<template>
+Dying Light to parkourowy survival horror z kooperacją do 4 graczy, dziejący się w mieście pełnym zombie.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ GROUNDED</pattern>
+<template>
+Grounded to survival kooperacyjny, w którym gracze są pomniejszeni do rozmiarów owadów i muszą przetrwać w ogrodzie.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ GUNFIRE REBORN</pattern>
+<template>
+Gunfire Reborn to roguelike FPS z kooperacją, z elementami RPG i losowo generowanymi poziomami.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ RISK OF RAIN 2</pattern>
+<template>
+Risk of Rain 2 to roguelike TPS z kooperacją, gdzie zbierasz mocne przedmioty i walczysz z coraz silniejszymi wrogami.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ WARHAMMER VERMINTIDE 2</pattern>
+<template>
+Warhammer Vermintide 2 to kooperacyjny FPS inspirowany Left 4 Dead, osadzony w świecie Warhammer Fantasy.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ DON'T STARVE TOGETHER</pattern>
+<template>
+Don't Starve Together to survival kooperacyjny z gotyckim stylem artystycznym i trudnymi warunkami przetrwania.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ TERRARIA</pattern>
+<template>
+Terraria to sandbox 2D z kooperacją, łączący eksplorację, budowanie, crafting i walkę z bossami.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ MINECRAFT</pattern>
+<template>
+Minecraft to kultowy sandbox z kooperacją, gdzie możesz budować, eksplorować i przetrwać z przyjaciółmi.
+</template>
+</category>
+</aiml>

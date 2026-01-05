@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+<pattern>OPISZ ELDEN RING</pattern>
+<template>
+Elden Ring to RPG akcji z otwartym swiatem, stworzony przez twórców Dark Souls i George'a R.R. Martina.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ STARFIELD</pattern>
+<template>
+Starfield to RPG science fiction od twórców Skyrima, rozgrywajacy sie w kosmosie z setkami planet do eksploracji.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ HOGWARTS LEGACY</pattern>
+<template>
+Hogwarts Legacy to RPG osadzony w swiecie Harry'ego Pottera, gdzie uczysz sie magii i eksplorujesz Hogwart.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ WIEDZMIN 3</pattern>
+<template>
+Wiedzmin 3 Dziki Gon to polskie RPG z otwartym swiatem, swietna fabula i trudnymi wyborami moralnymi.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ THE WITCHER 3</pattern>
+<template>
+<srai>OPISZ WIEDZMIN 3</srai>
+</template>
+</category>
+
+<category>
+<pattern>OPISZ SKYRIM</pattern>
+<template>
+Skyrim to RPG fantasy z ogromnym otwartym swiatem, smokami i dowolnoscia rozwoju postaci.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ DRAGON AGE INQUISITION</pattern>
+<template>
+Dragon Age Inquisition to RPG taktyczne, w ktorym kierujesz Inkwizycja i podejmujesz decyzje wplywajace na swiat.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ BALDURS GATE 3</pattern>
+<template>
+Baldurs Gate 3 to RPG oparte na zasadach DnD, z walkami turowymi i ogromna swoboda wyborow.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ CYBERPUNK 2077</pattern>
+<template>
+Cyberpunk 2077 to RPG akcji w futurystycznym Night City, z naciskiem na fabule i klimat.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ MASS EFFECT 2</pattern>
+<template>
+Mass Effect 2 to RPG science fiction, w ktorym decyzje gracza wplywaja na losy zalogi i zakonczenie.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ DIVINITY ORIGINAL SIN 2</pattern>
+<template>
+Divinity Original Sin 2 to taktyczne RPG z walka turowa i ogromna swoboda interakcji ze swiatem.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ PILLARS OF ETERNITY</pattern>
+<template>
+Pillars of Eternity to klasyczne izometryczne RPG inspirowane Baldurs Gate, z rozbudowana fabula.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ KINGDOM COME DELIVERANCE</pattern>
+<template>
+Kingdom Come Deliverance to realistyczne RPG bez magii, osadzone w sredniowiecznych Czechach.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ DISCO ELYSIUM</pattern>
+<template>
+Disco Elysium to nietypowe RPG skupione na dialogach i psychologii postaci, bez klasycznej walki.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ FALLOUT 4</pattern>
+<template>
+Fallout 4 to postapokaliptyczne RPG z otwartym swiatem, systemem craftingu i budowaniem osiedli.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ FALLOUT NEW VEGAS</pattern>
+<template>
+Fallout New Vegas to kultowe RPG postapokaliptyczne z najlepsza fabula i wyborami w serii.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ DARK SOULS 3</pattern>
+<template>
+Dark Souls 3 to wymagajace RPG akcji z mrocznym światem fantasy, trudnymi bossami i niejawą fabułą.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ BLOODBORNE</pattern>
+<template>
+Bloodborne to RPG akcji w stylu lovecraftowskiego horroru, z szybką, agresywną walką.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ SEKIRO</pattern>
+<template>
+Sekiro Shadows Die Twice to RPG akcji skupione na precyzyjnej walce mieczem i systemie parowania.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ PATHFINDER WRATH OF THE RIGHTEOUS</pattern>
+<template>
+Pathfinder Wrath of the Righteous to rozbudowane RPG izometryczne z ogromną ilością opcji rozwoju postaci.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ SOLASTA CROWN OF THE MAGISTER</pattern>
+<template>
+Solasta Crown of the Magister to RPG oparte na zasadach DnD 5E z wertykalną walką i tworzeniem własnej drużyny.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ TYRANNY</pattern>
+<template>
+Tyranny to RPG izometryczne, w którym gracz służy złemu imperium i podejmuje moralnie trudne decyzje.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ WASTELAND 3</pattern>
+<template>
+Wasteland 3 to postapokaliptyczne RPG taktyczne z drużyną do 6 postaci i wyborami wpływającymi na świat.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ GOTHIC 2</pattern>
+<template>
+Gothic 2 to kultowe polskie RPG z nieliniową fabułą i świetnie zaprojektowanym światem.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ DIABLO 4</pattern>
+<template>
+Diablo 4 to hack'n'slash RPG z mrocznym światem, systemem klas i kooperacyjną rozgrywką.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ PATH OF EXILE</pattern>
+<template>
+Path of Exile to darmowy hack'n'slash RPG z rozbudowanym drzewkiem talentów i regularnymi aktualizacjami.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ FINAL FANTASY VII REMAKE</pattern>
+<template>
+Final Fantasy VII Remake to odświeżona wersja klasycznego JRPG z systemem walki łączącym turowość z akcją.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ PERSONA 5 ROYAL</pattern>
+<template>
+Persona 5 Royal to JRPG łączące życie szkolne z walką w metawersum, z wyjątkowym stylem artystycznym.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ XENOBLADE CHRONICLES 3</pattern>
+<template>
+Xenoblade Chronicles 3 to JRPG z ogromnym światem do eksploracji, głębokim systemem walki i epicką fabułą.
+</template>
+</category>
+</aiml>

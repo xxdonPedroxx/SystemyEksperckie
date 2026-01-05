@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+<pattern>OPISZ FORZA HORIZON 5</pattern>
+<template>
+Forza Horizon 5 to arcadowa gra wyścigowa w otwartym świecie Meksyku, z setkami samochodów i wydarzeń.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ FORZA MOTORSPORT</pattern>
+<template>
+Forza Motorsport to symulacyjna gra wyścigowa z realistyczną fizyką i profesjonalnymi torami.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ GRAN TURISMO 7</pattern>
+<template>
+Gran Turismo 7 to symulacja wyścigowa na PlayStation, znana z realizmu, licencji samochodów i pięknej grafiki.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ F1 23</pattern>
+<template>
+F1 23 to oficjalny symulator Formuły 1 z aktualnymi zespołami, torami i kierowcami.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ NEED FOR SPEED HEAT</pattern>
+<template>
+Need for Speed Heat to arcadowa gra wyścigowa z tuningiem samochodów i nocnymi wyścigami ulicznymi.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ ASSETTO CORSA</pattern>
+<template>
+Assetto Corsa to hardkorowy symulator wyścigowy z realistyczną fizyką, popularny wśród entuzjastów.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ DIRT RALLY 2.0</pattern>
+<template>
+Dirt Rally 2.0 to symulator rajdowy z realistyczną fizyką na trudnych, zabłoconych trasach.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ TRACKMANIA</pattern>
+<template>
+Trackmania to szybka, arcadowa gra wyścigowa z tworzeniem własnych torów i rywalizacją na czas.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ BURNING RUBBER</pattern>
+<template>
+<srai>OPISZ NEED FOR SPEED HEAT</srai>
+</template>
+</category>
+
+<category>
+<pattern>OPISZ EURO TRUCK SIMULATOR 2</pattern>
+<template>
+Euro Truck Simulator 2 to symulator jazdy ciężarówką po Europie, z zarządzaniem firmą transportową.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ AMERICAN TRUCK SIMULATOR</pattern>
+<template>
+American Truck Simulator to symulator jazdy ciężarówką po USA, z rozległymi trasami i krajobrazami.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ FARMING SIMULATOR 22</pattern>
+<template>
+Farming Simulator 22 to symulator rolnictwa z uprawą roślin, hodowlą zwierząt i zarządzaniem farmą.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ MICROSOFT FLIGHT SIMULATOR</pattern>
+<template>
+Microsoft Flight Simulator to niezwykle realistyczny symulator lotu z całym światem odtworzonym na podstawie danych satelitarnych.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ SURGEON SIMULATOR</pattern>
+<template>
+Surgeon Simulator to zabawny symulator operacji chirurgicznych z fizyką ragdoll i nieporadną kontrolą.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ PC BUILDING SIMULATOR</pattern>
+<template>
+PC Building Simulator to gra symulująca składanie i naprawę komputerów PC, z realistycznymi komponentami.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ CAR MECHANIC SIMULATOR</pattern>
+<template>
+Car Mechanic Simulator to symulator naprawy samochodów, od prostych napraw po kompleksowe renowacje.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ POWERWASH SIMULATOR</pattern>
+<template>
+PowerWash Simulator to relaksująca gra o myciu różnych przedmiotów i miejsc za pomocą myjki ciśnieniowej.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ HOUSE FLIPPER</pattern>
+<template>
+House Flipper to symulator remontowania i sprzedaży domów, od malowania po układanie płytek.
+</template>
+</category>
+
+<category>
+<pattern>OPISZ COOKING SIMULATOR</pattern>
+<template>
+Cooking Simulator to symulator gotowania z realistyczną fizyką żywności i setkami przepisów.
+</template>
+</category>
+</aiml>

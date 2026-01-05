@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+  <pattern>OPISZ THE LAST OF US 2</pattern>
+  <template>
+    The Last of Us 2 to gra akcji i przygodowa z emocjonalna, dojrzala fabula w swiecie po apokalipsie.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ UNCHARTED 4</pattern>
+  <template>
+    Uncharted 4 to przygodowa gra akcji o poszukiwaniu skarbow, pelna efektownych scen i dialogow.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ LIFE IS STRANGE</pattern>
+  <template>
+    Life is Strange to epizodyczna przygodowka, w ktorej manipulujesz czasem i podejmujesz decyzje wplywajace na historie.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ DETROIT BECOME HUMAN</pattern>
+  <template>
+    Detroit Become Human to gra narracyjna o androidach, z wieloma mozliwymi zakonczeniami zaleznymi od decyzji gracza.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ FIREWATCH</pattern>
+  <template>
+    Firewatch to krotka przygodowka skupiona na dialogach i relacji miedzy dwoma straznikami lasu.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ RED DEAD REDEMPTION 2</pattern>
+  <template>
+    Red Dead Redemption 2 to western z otwartym swiatem, silnie nastawiony na fabule i klimat.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ GOD OF WAR</pattern>
+  <template>
+    God of War to gra akcji z elementami RPG, opowiadajaca historie Kratosa i jego syna w swiecie nordyckim.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ GHOST OF TSUSHIMA</pattern>
+  <template>
+    Ghost of Tsushima to gra akcji w otwartym swiecie, osadzona w feudalnej Japonii, z naciskiem na walke i klimat samurajski.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ HEAVY RAIN</pattern>
+  <template>
+    Heavy Rain to gra narracyjna, w ktorej decyzje gracza wplywaja na przebieg sledztwa i zakonczenie.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ HELLBLADE</pattern>
+  <template>
+    Hellblade Senuas Sacrifice to gra akcji laczaca walke z psychologiczna historia bohaterki.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ HADES</pattern>
+  <template>
+    Hades to roguelike, w ktorym jako Zagreus probujesz uciec z Hadesu, zdobywajac moce od bogow.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ HOLLOW KNIGHT</pattern>
+  <template>
+    Hollow Knight to metroidvania z rozbudowana mapa, trudnymi walkami i mrocznym, recznie rysowanym swiatem.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ CELESTE</pattern>
+  <template>
+    Celeste to wymagajaca platformowka o wspinaczce na gore, polaczona z opowiescia o walce z wlasnymi lekami.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ STARDEW VALLEY</pattern>
+  <template>
+    Stardew Valley to spokojna gra o prowadzeniu farmy, relacjach z mieszkancami i eksploracji kopalni.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ SLAY THE SPIRE</pattern>
+  <template>
+    Slay the Spire to karciany roguelike, w ktorym budujesz talie i wspinasz sie po wiezy pelnej przeciwnikow.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ DEAD CELLS</pattern>
+  <template>
+    Dead Cells to roguelike z dynamiczna walka i eksploracja w stylu metroidvania.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ LIMBO</pattern>
+  <template>
+    Limbo to czarno biala platformowka logiczna z mrocznym klimatem i zagadkami fizycznymi.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ INSIDE</pattern>
+  <template>
+    Inside to platformowka logiczna z gestym klimatem i symbolika, bez dialogow.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ UNDERTALE</pattern>
+  <template>
+    Undertale to RPG, w ktorym mozesz przejsc gre bez zabijania wrogow, z humorem i meta narracja.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ CUPHEAD</pattern>
+  <template>
+    Cuphead to trudna strzelanka platformowa inspirowana stylem kreskowek z lat 30.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ RESIDENT EVIL 2 REMAKE</pattern>
+  <template>
+    Resident Evil 2 Remake to survival horror, w ktorym eksplorujesz Raccoon City opanowane przez zombie.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ OUTLAST</pattern>
+  <template>
+    Outlast to horror z perspektywy pierwszej osoby, gdzie nie walczysz, tylko uciekasz i ukrywasz sie.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ ALIEN ISOLATION</pattern>
+  <template>
+    Alien Isolation to horror science fiction, w ktorym unikasz jednego bardzo groznego obcego.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ AMNESIA REBIRTH</pattern>
+  <template>
+    Amnesia Rebirth to horror psychologiczny skupiony na atmosferze i zagadkach.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ SILENT HILL 2</pattern>
+  <template>
+    Silent Hill 2 to klasyczny psychologiczny horror z mroczna symbolika i ciezkim klimatem.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ DEAD SPACE REMAKE</pattern>
+  <template>
+    Dead Space Remake to horror science fiction, w ktorym walczysz z nekromorfami na opuszczonym statku.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ THE EVIL WITHIN</pattern>
+  <template>
+    The Evil Within to survival horror laczacy surrealistyczne lokacje i ograniczone zasoby.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ SOMA</pattern>
+  <template>
+    Soma to horror science fiction skupiony na pytaniach o swiadomosc i nature czlowieka.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ LAYERS OF FEAR</pattern>
+  <template>
+    Layers of Fear to horror psychologiczny, w ktorym eksplorujesz zmieniajaca sie rezydencje artysty.
+  </template>
+</category>
+
+<category>
+  <pattern>OPISZ PHASMOPHOBIA</pattern>
+  <template>
+    Phasmophobia to kooperacyjny horror multiplayer, gdzie badacie nawiedzone miejsca i identyfikujecie duchy.
+  </template>
+</category>
+</aiml>
