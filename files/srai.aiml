@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+<!-- CZESC -->
+
+<category>
+    <pattern>ELO</pattern>
+    <template>
+      <srai>CZESC</srai>
+    </template>
+</category>  
+<category>
+    <pattern>SIEMA</pattern>
+    <template>
+      <srai>CZESC</srai>
+    </template>
+</category>  
+<category>
+    <pattern>HEJ</pattern>
+    <template>
+      <srai>CZESC</srai>
+    </template>
+</category>  
+<category>
+    <pattern>HI</pattern>
+    <template>
+      <srai>CZESC</srai>
+    </template>
+</category>  
+<category>
+    <pattern>HELLO</pattern>
+    <template>
+      <srai>CZESC</srai>
+    </template>
+</category>  
+<category>
+    <pattern>WITAM</pattern>
+    <template>
+      <srai>CZESC</srai>
+    </template>
+</category>  
+<category>
+    <pattern>DZIEN DOBRY</pattern>
+    <template>
+      <srai>CZESC</srai>
+    </template>
+</category> 
+
+<!-- POMOC -->
+
+<category>
+    <pattern>POMOCY</pattern>
+    <template>
+      <srai>POMOC</srai>
+    </template>
+</category> 
+<category>
+    <pattern>NIE DZIALA</pattern>
+    <template>
+      <srai>POMOC</srai>
+    </template>
+</category> 
+<category>
+    <pattern>ZEPSUTE</pattern>
+    <template>
+      <srai>POMOC</srai>
+    </template>
+</category> 
+<category> 
+    <pattern>POMOCYY</pattern>
+    <template>
+      <srai>POMOC</srai>
+    </template>
+</category> 
+
+<!-- POLEC MI GRE -->
+
+<category> 
+    <pattern>ZARZUĆ GIERKĘ*</pattern>
+    <template>
+      <srai>POLEC MI GRE</srai>
+    </template>
+</category>
+<category> 
+    <pattern>ZARZUĆ GIERKĘ</pattern>
+    <template>
+      <srai>POLEC MI GRE</srai>
+    </template>
+</category>
+<category> 
+    <pattern>DAWAJ GIERKE</pattern>
+    <template>
+      <srai>POLEC MI GRE</srai>
+    </template>
+</category>
+
+<!-- HUMOR -->
+<category> 
+    <pattern>HUMOR OFF</pattern>
+    <template>
+      <srai>WYLACZ HUMOR</srai>
+    </template>
+</category>
+<category> 
+    <pattern>HUMOR ON</pattern>
+    <template>
+      <srai>WLACZ HUMOR</srai>
+    </template>
+</category>
+
+<!-- PREFERENCJĘ -->
+
+<category> 
+    <pattern>PREFERENCJE</pattern>
+    <template>
+      <srai>POKAZ PREFERENCJE</srai>
+    </template>
+</category>
+
+<category> 
+    <pattern>DAWAJ PREFERENCJE</pattern>
+    <template>
+      <srai>POKAZ PREFERENCJE</srai>
+    </template>
+</category>
+<category> 
+    <pattern>USUN PREFERENCJE</pattern>
+    <template>
+      <srai>RESET PREFERENCJE</srai>
+    </template>
+</category>
+<category> 
+    <pattern>WYMAZ PREFERENCJE</pattern>
+    <template>
+      <srai>RESET PREFERENCJE</srai>
+    </template>
+</category>
+
+<!-- GRY -->
+
+<category> 
+    <pattern>GRY</pattern>
+    <template>
+      <srai>LISTA GIER</srai>
+    </template>
+</category>
+<category> 
+    <pattern>JAKIE GRY *</pattern>
+    <template>
+      <srai>LISTA GIER</srai>
+    </template>
+</category>
+<category> 
+    <pattern>JAKIE GATUNKI*</pattern>
+    <template>
+      <srai>LISTA GATUNKOW</srai>
+    </template>
+</category>
+<category> 
+    <pattern>GATUNKI</pattern>
+    <template>
+      <srai>LISTA GATUNKOW</srai>
+    </template>
+</category>
+
+<!-- ULUBIONE -->
+
+<category> 
+    <pattern>MOJE GRY</pattern>
+    <template>
+      <srai>ULUBIONE GRY</srai>
+    </template>
+</category>
+<category> 
+    <pattern>ULUBIONE</pattern>
+    <template>
+      <srai>ULUBIONE GRY</srai>
+    </template>
+</category>
+<category> 
+    <pattern>GRY</pattern>
+    <template>
+      <srai>ULUBIONE GRY</srai>
+    </template>
+</category>
+
+
+</aiml>

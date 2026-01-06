@@ -1,284 +1,5 @@
 <aiml version="2.0">
 
-<!-- Dodane nowe zmienne dla dodatkowych opcji -->
-<category>
-  <pattern>RESET PREFERENCJE</pattern>
-  <template>
-    <think>
-      <set name="gatunek">NIEZNANY</set>
-      <set name="platforma">NIEZNANA</set>
-      <set name="tryb">NIEZNANY</set>
-      <set name="poziom">NISKI</set>
-      <set name="nastroj">NEUTRALNY</set>
-      <set name="cena">DOWOLNA</set>
-      <set name="rok_wydania">DOWOLNY</set>
-      <set name="ulubione"></set>
-      <set name="humor">OFF</set>
-      <set name="tryb_dialogu">KROKOWY</set>
-      <set name="historia"></set>
-    </think>
-    Zresetowalem wszystko. Jestem czysty jak nowy save w Skyrimie. Napisz POLEC MI GRE aby zaczac.
-  </template>
-</category>
-
-<!-- ZMIENIONE: CZESC z informacją o POMOC -->
-<category>
-  <pattern>CZESC</pattern>
-  <template>
-    Czesc! Jestem Twoim doradca growym. Wybieram gry lepiej niz loot w Diablo.<br/>
-    <br/>
-    Dostępne opcje:<br/>
-    - Napisz POLEC MI GRE aby rozpocząć rekomendację<br/>
-    - Napisz POMOC aby zobaczyć wszystkie komendy<br/>
-    - Napisz WLACZ HUMOR dla trybu humorystycznego<br/>
-    <br/>
-    Co chcesz zrobić?
-  </template>
-</category>
-
-<!-- ZMIENIONE: POKAZ OPCJE na POMOC z nowym formatowaniem -->
-<category>
-  <pattern>POMOC</pattern>
-  <template>
-    🎮 **DOSTĘPNE KOMENDY:** 🎮<br/>
-    <br/>
-    **🎯 REKOMENDACJE:**<br/>
-    - POLEC MI GRE - rozpoczęcie rekomendacji gier<br/>
-    - OPISZ [NAZWA GRY] - szczegóły o konkretnej grze (np. OPISZ WIEDZMIN 3)<br/>
-    <br/>
-    **⚙️ ZARZĄDZANIE PREFERENCJAMI:**<br/>
-    - ZMIEN GATUNEK - zmiana wybranego gatunku<br/>
-    - ZMIEN PLATFORME - zmiana platformy<br/>
-    - ZMIEN TRYB - zmiana trybu gry<br/>
-    - ZMIEN POZIOM - zmiana poziomu trudności<br/>
-    - ZMIEN NASTROJ - zmiana nastroju<br/>
-    - ZMIEN CENE - zmiana przedziału cenowego<br/>
-    - ZMIEN ROK - zmiana preferencji co do roku wydania<br/>
-    - POKAZ PREFERENCJE - aktualne ustawieniav
-    - RESET PREFERENCJE - reset wszystkiego<br/>
-    <br/>
-    **🔄 NAWIGACJA:**<br/>
-    - COFNIJ - powrót do poprzedniego kroku<br/>
-    <br/>
-    **😄 FUNKCJE DODATKOWE:**<br/>
-    - WLACZ HUMOR - włączenie trybu humorystycznego<br/>
-    - WYLACZ HUMOR - wyłączenie trybu humorystycznego<br/>
-    <br/>
-    **❤️ ULUBIONE:**<br/>
-    - MOJA ULUBIONA GRA TO [NAZWA] - dodanie gry do ulubionych<br/>
-    - ULUBIONE GRY - pokazanie ulubionych gier<br/>
-    <br/>
-    **📋 INFORMACJE:**<br/>
-    - LISTA GATUNKOW - dostępne gatunki gier<br/>
-    - LISTA GIER - informacja o dostępnych opisach<br/>
-    - ILE GIER ZNASZ - statystyki bota<br/>
-    <br/>
-    **❓ POMOC:**<br/>
-    - POMOC - pokazanie tej listy komend<br/>
-    - CZESC - przywitanie z botem<br/>
-    <br/>
-    Napisz dowolną komendę aby rozpocząć!<br/>
-  </template>
-</category>
-
-<category>
-<pattern>POKAZ PREFERENCJE</pattern>
-<template>
-Twoje aktualne preferencje:
-- Gatunek: <get name="gatunek"/>
-- Platforma: <get name="platforma"/>
-- Tryb: <get name="tryb"/>
-- Poziom: <get name="poziom"/>
-- Nastroj: <get name="nastroj"/>
-- Cena: <get name="cena"/>
-- Rok wydania: <get name="rok_wydania"/>
-
-Uzywaj ZMIEN * aby zmienic dowolna opcje.
-</template>
-</category>
-
-<!-- Komendy zmiany preferencji -->
-<category>
-<pattern>ZMIEN GATUNEK</pattern>
-<template>
-<think><set name="gatunek">NIEZNANY</set></think>
-Jaki gatunek preferujesz?<br/>
-Dostępne opcje:<br/>
-- RPG<br/>
-- FPS<br/>
-- STRATEGIAv
-- PRZYGODOWA<br/>
-- INDIEv
-- HORROR<br/>
-- WYSCIGI<br/>
-- SYMULATOR<br/>
-- MOBA<br/>
-- BATTLE ROYALE<br/>
-- Możesz też podać dwa np. RPG I FPS
-</template>
-</category>
-
-<category>
-<pattern>ZMIEN PLATFORME</pattern>
-<template>
-<think><set name="platforma">NIEZNANA</set></think>
-Na jaka platforme grasz?<br/>
-Dostępne opcje:<br/>
-- PC<br/>
-- PLAYSTATION<br/>
-- XBOX<br/>
-- SWITCH<br/>
-- MOBILE<br/>
-- PC_I_PS (obydwie)<br/>
-- PLAYSTATION LUB XBOX<br/>
-- PC LUB SWITCH
-</template>
-</category>
-
-<category>
-<pattern>ZMIEN TRYB</pattern>
-<template>
-<think><set name="tryb">NIEZNANY</set></think>
-Wybierz tryb:<br/>
-- SINGLEPLAYER<br/>
-- MULTIPLAYER<br/>
-- KOOPERACJA
-</template>
-</category>
-
-<category>
-<pattern>ZMIEN POZIOM</pattern>
-<template>
-<think><set name="poziom">NISKI</set></think>
-Jaki poziom trudnosci?<br/>
-- NISKI<br/>
-- SREDNI<br/>
-- WYSOKI
-</template>
-</category>
-
-<category>
-<pattern>ZMIEN NASTROJ</pattern>
-<template>
-<think><set name="nastroj">NEUTRALNY</set></think>
-W jakim jestes nastroju<br/>
-- FABULARNY<br/>
-- RELAKS<br/>
-- RYWALIZACJA<br/>
-- HORROR
-</template>
-</category>
-
-<category>
-<pattern>ZMIEN CENE</pattern>
-<template>
-<think><set name="cena">DOWOLNA</set></think>
-Jaki przedzial cenowy?<br/>
-- DARMOWA<br/>
-- DO_50<br/>
-- DO_100<br/>
-- DO_200<br/>
-- POWYZEJ_200<br/>
-- DOWOLNA
-</template>
-</category>
-
-<category>
-<pattern>ZMIEN ROK</pattern>
-<template>
-<think><set name="rok_wydania">DOWOLNY</set></think>
-Preferujesz gry:<br/>
-- NOWE (po 2020)<br/>
-- KLASYKI (przed 2015)<br/>
-- DOWOLNY
-</template>
-</category>
-
-<!-- Komenda cofania -->
-<category>
-<pattern>COFNIJ</pattern>
-<template>
-<condition name="historia">
-<li value="PLATFORMA">
-<think>
-<set name="historia"></set>
-<set name="platforma">NIEZNANA</set>
-</think>
-OK, wracamy do wyboru platformy.<br/>
-Dostępne opcje:<br/>
-- PC<br/>
-- PLAYSTATION<br/>
-- XBOX<br/>
-- SWITCH<br/>
-- MOBILE<br/>
-- PC_I_PS
-</li>
-<li value="TRYB">
-<think>
-<set name="historia">PLATFORMA</set>
-<set name="tryb">NIEZNANY</set>
-</think>
-OK, wracamy do wyboru trybu.<br/>
-Dostępne opcje:<br/>
-- SINGLEPLAYER<br/>
-- MULTIPLAYER<br/>
-- KOOPERACJA
-</li>
-<li value="POZIOM">
-<think>
-<set name="historia">TRYB</set>
-<set name="poziom">NISKI</set>
-</think>
-OK, wracamy do wyboru poziomu.<br/>
-Dostępne opcje:<br/>
-- NISKI<br/>
-- SREDNI<br/>
-- WYSOKI
-</li>
-<li value="NASTROJ">
-<think>
-<set name="historia">POZIOM</set>
-<set name="nastroj">NEUTRALNY</set>
-</think>
-OK, wracamy do wyboru nastroju.<br/>
-Dostępne opcje:<br/>
-- FABULARNY<br/>
-- RELAKS<br/>
-- RYWALIZACJA<br/>
-- HORROR
-</li>
-<li value="CENA">
-<think>
-<set name="historia">NASTROJ</set>
-<set name="cena">DOWOLNA</set>
-</think>
-OK, wracamy do wyboru ceny.<br/>
-Dostępne opcje:<br/>
-- DARMOWA<br/>
-- DO_50<br/>
-- DO_100v
-- DO_200<br/>
-- POWYZEJ_200<br/>
-- DOWOLNA
-</li>
-<li value="ROK">
-<think>
-<set name="historia">CENA</set>
-<set name="rok_wydania">DOWOLNY</set>
-</think>
-OK, wracamy do wyboru roku.<br/>
-Dostępne opcje:<br/>
-- NOWE<br/>
-- KLASYKI<br/>
-- DOWOLNY
-</li>
-<li>
-Nie ma dokad cofnac. Napisz POLEC MI GRE aby zaczac od nowa.
-</li>
-</condition>
-</template>
-</category>
-
 <category>
 <pattern>WLACZ HUMOR</pattern>
 <template>
@@ -326,25 +47,25 @@ Tryb szybki wlaczony. Mozesz walic preferencje jak combo w Tekkenie.
 </think>
 Zaczynamy rekomendację! 🎮
 
-Jaki gatunek lubisz?<br/>
-Dostępne opcje:<br/>
-- RPG<br/>
-- FPS<br/>
-- STRATEGIA<br/>
-- PRZYGODOWA<br/>
-- INDIE<br/>
-- HORROR<br/>
-- WYSCIGI<br/>
-- SYMULATOR<br/>
-- MOBA<br/>
-- BATTLE ROYALE<br/>
-Napisz LUBIE GRY:<br/>
-
-Możesz też podać dwa gatunki, np. "RPG I FPS"
+Dostępne gatunki gier:<br/>
+<br/>
+- ⚔️ RPG<br/>
+- 🔫 FPS<br/>
+- ♟️ STRATEGIA<br/>
+- 🗺️ PRZYGODOWA<br/>
+- ✨ INDIE<br/>
+- 👻 HORROR<br/>
+- 🏁 WYSCIGI<br/>
+- 🎮 SYMULATOR<br/>
+- ⚡ MOBA<br/>
+- 👑 BATTLE ROYALE<br/>
+Napisz LUBIE GRY [FPS]
+Możesz też podać dwa gatunki np. RPG I FPS
+LUBIE GRY FPS i RPG
 </template>
+
 </category>
 
-<!-- Rozszerzone wzorce dla gatunków (obsługa wielowyrazowych odpowiedzi) -->
 <category>
 <pattern>LUBIE GRY * I *</pattern>
 <template>
@@ -353,14 +74,15 @@ Możesz też podać dwa gatunki, np. "RPG I FPS"
 </think>
 OK, zapisuje gatunki <star index="1"/> i <star index="2"/>.
 <br/>
-Na jaka platforme grasz?<br/>
-Dostępne opcje:<br/>
-- PC<br/>
-- PLAYSTATION<br/>
-- XBOX<br/>
-- SWITCH<br/>
-- MOBILE<br/>
-- PC_I_PS
+🎮 Na jakiej platformie grasz?<br/>
+<br/>
+Wybierz jedną z poniższych:<br/>
+<br/>
+- 💻 PC - królestwo modów i 144 HZ<br/>
+- 🎮 PLAYSTATION - ekskluzywne perełki<br/>
+- 📦 XBOX - Game Pass i zielone światło<br/>
+- 🔄 SWITCH - granie w podróży<br/>
+- 📲 MOBILE - gry w autobusie i kolejce
 </template>
 </category>
 
@@ -370,14 +92,13 @@ Dostępne opcje:<br/>
 <think><set name="gatunek"><star/></set></think>
 OK, zapisuje gatunek <get name="gatunek"/>.
 <br/>
-Na jaka platforme grasz?<br/>
+Na jakiej platformie grasz?<br/>
 Dostępne opcje:<br/>
-- PC<br/>
-- PLAYSTATION<br/>
-- XBOX<br/>
-- SWITCH<br/>
-- MOBILE<br/>
-- PC_I_PS
+- 💻 PC - królestwo modów i 144 HZ<br/>
+- 🎮 PLAYSTATION - ekskluzywne perełki<br/>
+- 📦 XBOX - Game Pass i zielone światło<br/>
+- 🔄 SWITCH - granie w podróży<br/>
+- 📲 MOBILE - gry w autobusie i kolejce
 </template>
 </category>
 
@@ -387,13 +108,13 @@ Dostępne opcje:<br/>
 <think><set name="gatunek">RPG_I_FPS</set></think>
 Dwa w jednym! RPG i FPS.<br/>
 <br/>
-Na jaka platforme grasz?<br/>
+Na jakiej platformie grasz?<br/>
 Dostępne opcje:<br/>
-- PC<br/>
-- PLAYSTATION<br/>
-- XBOX<br/>
-- SWITCH<br/>
-- MOBILE
+- 💻 PC - królestwo modów i 144 HZ<br/>
+- 🎮 PLAYSTATION - ekskluzywne perełki<br/>
+- 📦 XBOX - Game Pass i zielone światło<br/>
+- 🔄 SWITCH - granie w podróży<br/>
+- 📲 MOBILE - gry w autobusie i kolejce
 </template>
 </category>
 
@@ -403,13 +124,13 @@ Dostępne opcje:<br/>
 <think><set name="gatunek">FPS_I_STRATEGIA</set></think>
 Mieszanka wybuchowa! FPS i strategia.<br/>
 <br/>
-Na jaka platforme grasz?<br/>
+Na jakiej platformie grasz?<br/>
 Dostępne opcje:<br/>
-- PC<br/>
-- PLAYSTATION<br/>
-- XBOX<br/>
-- SWITCH<br/>
-- MOBILE
+- 💻 PC - królestwo modów i 144 HZ<br/>
+- 🎮 PLAYSTATION - ekskluzywne perełki<br/>
+- 📦 XBOX - Game Pass i zielone światło<br/>
+- 🔄 SWITCH - granie w podróży<br/>
+- 📲 MOBILE - gry w autobusie i kolejce
 </template>
 </category>
 
@@ -419,17 +140,16 @@ Dostępne opcje:<br/>
 <think><set name="gatunek">RPG_I_PRZYGODOWA</set></think>
 RPG z przygodowa - klasyk!<br/>
 <br/>
-Na jaka platforme grasz?<br/>
+Na jakiej platformie grasz?<br/>
 Dostępne opcje:<br/>
-- PC<br/>
-- PLAYSTATION<br/>
-- XBOX<br/>
-- SWITCH<br/>
-- MOBILE
+- 💻 PC - królestwo modów i 144 HZ<br/>
+- 🎮 PLAYSTATION - ekskluzywne perełki<br/>
+- 📦 XBOX - Game Pass i zielone światło<br/>
+- 🔄 SWITCH - granie w podróży<br/>
+- 📲 MOBILE - gry w autobusie i kolejce
 </template>
 </category>
 
-<!-- Platformy z obsługą "lub" -->
 <category>
 <pattern>PC LUB PLAYSTATION</pattern>
 <template>
@@ -439,10 +159,11 @@ Dostępne opcje:<br/>
 </think>
 OK, grasz na PC lub PlayStation.<br/>
 <br/>
-Wybierz tryb:<br/>
-- SINGLEPLAYER<br/>
-- MULTIPLAYER<br/>
-- KOOPERACJA
+🎮 Wybierz tryb gry:<br/>
+<br/>
+- 🧍 SINGLEPLAYER - sam na sam z fabułą<br/>
+- 👥 MULTIPLAYER - walka lub współpraca z innymi<br/>
+- 🤝 KOOPERACJA - razem z przyjaciółmi przeciw grze
 </template>
 </category>
 
@@ -455,10 +176,11 @@ Wybierz tryb:<br/>
 </think>
 OK, grasz na PlayStation lub Xbox.<br/>
 <br/>
-Wybierz tryb:<br/>
-- SINGLEPLAYER<br/>
-- MULTIPLAYER<br/>
-- KOOPERACJA
+🎮 Wybierz tryb gry:<br/>
+<br/>
+- 🧍 SINGLEPLAYER - sam na sam z fabułą<br/>
+- 👥 MULTIPLAYER - walka lub współpraca z innymi<br/>
+- 🤝 KOOPERACJA - razem z przyjaciółmi przeciw grze
 </template>
 </category>
 
@@ -471,14 +193,14 @@ Wybierz tryb:<br/>
 </think>
 OK, grasz na PC lub Switch.<br/>
 <br/>
-Wybierz tryb:<br/>
-- SINGLEPLAYER<br/>
-- MULTIPLAYER<br/>
-- KOOPERACJA
+🎮 Wybierz tryb gry:<br/>
+<br/>
+- 🧍 SINGLEPLAYER - sam na sam z fabułą<br/>
+- 👥 MULTIPLAYER - walka lub współpraca z innymi<br/>
+- 🤝 KOOPERACJA - razem z przyjaciółmi przeciw grze
 </template>
 </category>
 
-<!-- Podstawowe platformy -->
 <category>
 <pattern>PC</pattern>
 <template>
@@ -488,10 +210,11 @@ Wybierz tryb:<br/>
 </think>
 PC. Krolestwo modow, 144 FPS i wiecznego upgradeowania sprzetu.<br/>
 <br/>
-Wybierz tryb:<br/>
-- SINGLEPLAYER<br/>
-- MULTIPLAYER<br/>
-- KOOPERACJA
+🎮 Wybierz tryb gry:<br/>
+<br/>
+- 🧍 SINGLEPLAYER - sam na sam z fabułą<br/>
+- 👥 MULTIPLAYER - walka lub współpraca z innymi<br/>
+- 🤝 KOOPERACJA - razem z przyjaciółmi przeciw grze
 </template>
 </category>
 
@@ -504,11 +227,12 @@ Wybierz tryb:<br/>
 </think>
 PlayStation. Dom ekskluzywnych fabularnych perelek.<br/>
 <br/>
-Wybierz tryb:<br/>
-- SINGLEPLAYER<br/>
-- MULTIPLAYER<br/>
-- KOOPERACJA
-</template>
+🎮 Wybierz tryb gry:<br/>
+<br/>
+- 🧍 SINGLEPLAYER - sam na sam z fabułą<br/>
+- 👥 MULTIPLAYER - walka lub współpraca z innymi<br/>
+- 🤝 KOOPERACJA - razem z przyjaciółmi przeciw grze
+</template>>
 </category>
 
 <category>
@@ -520,10 +244,11 @@ Wybierz tryb:<br/>
 </think>
 Xbox. Game Pass i zielone swiatlo dla graczy.<br/>
 <br/>
-Wybierz tryb:<br/>
-- SINGLEPLAYER<br/>
-- MULTIPLAYER<br/>
-- KOOPERACJA
+🎮 Wybierz tryb gry:<br/>
+<br/>
+- 🧍 SINGLEPLAYER - sam na sam z fabułą<br/>
+- 👥 MULTIPLAYER - walka lub współpraca z innymi<br/>
+- 🤝 KOOPERACJA - razem z przyjaciółmi przeciw grze
 </template>
 </category>
 
@@ -536,10 +261,11 @@ Wybierz tryb:<br/>
 </think>
 Switch. Konsola ktora udowadnia ze 30 FPS tez moze byc fajne.<br/>
 <br/>
-Wybierz tryb:<br/>
-- SINGLEPLAYER<br/>
-- MULTIPLAYER<br/>
-- KOOPERACJA
+🎮 Wybierz tryb gry:<br/>
+<br/>
+- 🧍 SINGLEPLAYER - sam na sam z fabułą<br/>
+- 👥 MULTIPLAYER - walka lub współpraca z innymi<br/>
+- 🤝 KOOPERACJA - razem z przyjaciółmi przeciw grze
 </template>
 </category>
 
@@ -552,10 +278,11 @@ Wybierz tryb:<br/>
 </think>
 Mobile. Idealne do grania w autobusie i ignorowania ludzi.<br/>
 <br/>
-Wybierz tryb:<br/>
-- SINGLEPLAYER<br/>
-- MULTIPLAYER<br/>
-- KOOPERACJA
+🎮 Wybierz tryb gry:<br/>
+<br/>
+- 🧍 SINGLEPLAYER - sam na sam z fabułą<br/>
+- 👥 MULTIPLAYER - walka lub współpraca z innymi<br/>
+- 🤝 KOOPERACJA - razem z przyjaciółmi przeciw grze
 </template>
 </category>
 
@@ -567,11 +294,11 @@ Wybierz tryb:<br/>
 <set name="tryb">SINGLEPLAYER</set>
 <set name="historia">TRYB</set>
 </think>
-Jaki poziom trudnosci?<br/>
-Dostępne opcje:<br/>
-- NISKI<br/>
-- SREDNI<br/>
-- WYSOKI
+⚙️ Dopasuj trudność:<br/>
+<br/>
+- 🌱 NISKI <br/>
+- ⚖️ ŚREDNI <br/>
+- 💀 WYSOKI 
 </template>
 </category>
 
@@ -582,11 +309,11 @@ Dostępne opcje:<br/>
 <set name="tryb">MULTIPLAYER</set>
 <set name="historia">TRYB</set>
 </think>
-Jaki poziom trudnosci?<br/>
-Dostępne opcje:<br/>
-- NISKI<br/>
-- SREDNI<br/>
-- WYSOKI
+⚙️ Dopasuj trudność:<br/>
+<br/>
+- 🌱 NISKI <br/>
+- ⚖️ ŚREDNI <br/>
+- 💀 WYSOKI 
 </template>
 </category>
 
@@ -599,11 +326,11 @@ Dostępne opcje:<br/>
 </think>
 Tryb kooperacyjny! Gramy z przyjaciółmi.<br/>
 <br/>
-Jaki poziom trudnosci?<br/>
-Dostępne opcje:<br/>
-- NISKI<br/>
-- SREDNI<br/>
-- WYSOKI
+⚙️ Dopasuj trudność:<br/>
+<br/>
+- 🌱 NISKI <br/>
+- ⚖️ ŚREDNI <br/>
+- 💀 WYSOKI 
 </template>
 </category>
 
@@ -617,14 +344,14 @@ Dostępne opcje:<br/>
 </think>
 OK.<br/>
 <br/>
-Jaki przedzial cenowy?<br/>
-Dostępne opcje:<br/>
-- DARMOWA<br/>
-- DO_50<br/>
-- DO_100<br/>
-- DO_200<br/>
-- POWYZEJ_200<br/>
-- DOWOLNA
+💸 Budżet na grę:<br/>
+<br/>
+- 🆓 DARMOWA<br/>
+- 💰 DO_50 (do 50 zł)<br/>
+- 💵 DO_100 (do 100 zł)<br/>
+- 💎 DO_200 (do 200 zł)<br/>
+- 🏆 POWYZEJ_200 (powyżej 200 zł)<br/>
+- 🌟 DOWOLNA (nie ma znaczenia)
 </template>
 </category>
 
@@ -637,14 +364,14 @@ Dostępne opcje:<br/>
 </think>
 OK.<br/>
 <br/>
-Jaki przedzial cenowy?<br/>
-Dostępne opcje:<br/>
-- DARMOWA<br/>
-- DO_50<br/>
-- DO_100<br/>
-- DO_200<br/>
-- POWYZEJ_200<br/>
-- DOWOLNA
+💸 Budżet na grę:<br/>
+<br/>
+- 🆓 DARMOWA<br/>
+- 💰 DO_50 (do 50 zł)<br/>
+- 💵 DO_100 (do 100 zł)<br/>
+- 💎 DO_200 (do 200 zł)<br/>
+- 🏆 POWYZEJ_200 (powyżej 200 zł)<br/>
+- 🌟 DOWOLNA (nie ma znaczenia)
 </template>
 </category>
 
@@ -657,14 +384,14 @@ Dostępne opcje:<br/>
 </think>
 Wysoki poziom. Lubie ludzi ktorzy cierpia z wyboru.<br/>
 <br/>
-Jaki przedzial cenowy?<br/>
-Dostępne opcje:<br/>
-- DARMOWA<br/>
-- DO_50<br/>
-- DO_100<br/>
-- DO_200<br/>
-- POWYZEJ_200<br/>
-- DOWOLNA
+💸 Budżet na grę:<br/>
+<br/>
+- 🆓 DARMOWA<br/>
+- 💰 DO_50 (do 50 zł)<br/>
+- 💵 DO_100 (do 100 zł)<br/>
+- 💎 DO_200 (do 200 zł)<br/>
+- 🏆 POWYZEJ_200 (powyżej 200 zł)<br/>
+- 🌟 DOWOLNA (nie ma znaczenia)
 </template>
 </category>
 
@@ -678,10 +405,11 @@ Dostępne opcje:<br/>
 </think>
 Darmowe gry to najlepsze!<br/>
 <br/>
-Preferujesz gry:<br/>
-- NOWE (po 2020)<br/>
-- KLASYKI (przed 2015)<br/>
-- DOWOLNY
+📅 Preferujesz gry:<br/>
+<br/>
+- 🆕 NOWE (po 2020)<br/>
+- 🏛️ KLASYKI (przed 2015)<br/>
+- 🔄 DOWOLNY (obojętne)
 </template>
 </category>
 
@@ -694,10 +422,11 @@ Preferujesz gry:<br/>
 </think>
 Do 50 zlotych.<br/>
 <br/>
-Preferujesz gry:<br/>
-- NOWE (po 2020)<br/>
-- KLASYKI (przed 2015)<br/>
-- DOWOLNY
+📅 Preferujesz gry:<br/>
+<br/>
+- 🆕 NOWE (po 2020)<br/>
+- 🏛️ KLASYKI (przed 2015)<br/>
+- 🔄 DOWOLNY (obojętne)
 </template>
 </category>
 
@@ -710,10 +439,11 @@ Preferujesz gry:<br/>
 </think>
 Do 100 zlotych.<br/>
 <br/>
-Preferujesz gry:<br/>
-- NOWE (po 2020)<br/>
-- KLASYKI (przed 2015)<br/>
-+ DOWOLNY
+📅 Preferujesz gry:<br/>
+<br/>
+- 🆕 NOWE (po 2020)<br/>
+- 🏛️ KLASYKI (przed 2015)<br/>
+- 🔄 DOWOLNY (obojętne)
 </template>
 </category>
 
@@ -726,10 +456,11 @@ Preferujesz gry:<br/>
 </think>
 Do 200 zlotych.<br/>
 <br/>
-Preferujesz gry:<br/>
-- NOWE (po 2020)<br/>
-- KLASYKI (przed 2015)<br/>
-- DOWOLNY
+📅 Preferujesz gry:<br/>
+<br/>
+- 🆕 NOWE (po 2020)<br/>
+- 🏛️ KLASYKI (przed 2015)<br/>
+- 🔄 DOWOLNY (obojętne)
 </template>
 </category>
 
@@ -742,10 +473,11 @@ Preferujesz gry:<br/>
 </think>
 Powyej 200 zl - ktoś ma budżet!<br/>
 <br/>
-Preferujesz gry:<br/>
-- NOWE (po 2020)<br/>
-- KLASYKI (przed 2015)<br/>
-- DOWOLNY
+📅 Preferujesz gry:<br/>
+<br/>
+- 🆕 NOWE (po 2020)<br/>
+- 🏛️ KLASYKI (przed 2015)<br/>
+- 🔄 DOWOLNY (obojętne)
 </template>
 </category>
 
@@ -758,10 +490,11 @@ Preferujesz gry:<br/>
 </think>
 Budżet nie gra roli.<br/>
 <br/>
-Preferujesz gry:<br/>
-- NOWE (po 2020)<br/>
-- KLASYKI (przed 2015)<br/>
-- DOWOLNY
+📅 Preferujesz gry:<br/>
+<br/>
+- 🆕 NOWE (po 2020)<br/>
+- 🏛️ KLASYKI (przed 2015)<br/>
+- 🔄 DOWOLNY (obojętne)
 </template>
 </category>
 
@@ -775,12 +508,12 @@ Preferujesz gry:<br/>
 </think>
 NOWE gry. Ostatnio wydane hity.<br/>
 <br/>
-W jakim jestes nastroju?<br/>
-Dostępne opcje:<br/>
-- FABULARNY<br/>
-- RELAKS<br/>
-- RYWALIZACJA<br/>
-- HORROR
+🎭 W jakim jesteś nastroju?<br/>
+<br/>
+- 📖 FABULARNY<br/>
+- 😌 RELAKS<br/>
+- ⚔️ RYWALIZACJA<br/>
+- 👻 HORROR
 </template>
 </category>
 
@@ -793,12 +526,12 @@ Dostępne opcje:<br/>
 </think>
 KLASYKI. Gry które przeszly do historii.<br/>
 <br/>
-W jakim jestes nastroju?<br/>
-Dostępne opcje:<br/>
-- FABULARNY<br/>
-- RELAKS<br/>
-- RYWALIZACJA<br/>
-- HORROR
+🎭 W jakim jesteś nastroju?<br/>
+<br/>
+- 📖 FABULARNY<br/>
+- 😌 RELAKS<br/>
+- ⚔️ RYWALIZACJA<br/>
+- 👻 HORROR
 </template>
 </category>
 
@@ -809,12 +542,12 @@ Dostępne opcje:<br/>
 <set name="rok_wydania">DOWOLNY</set>
 <set name="historia">ROK</set>
 </think>
-W jakim jestes nastroju?<br/>
-Dostępne opcje:<br/>
-- FABULARNY<br/>
-- RELAKS<br/>
-- RYWALIZACJA<br/>
-- HORROR
+🎭 W jakim jesteś nastroju?<br/>
+<br/>
+- 📖 FABULARNY<br/>
+- 😌 RELAKS<br/>
+- ⚔️ RYWALIZACJA<br/>
+- 👻 HORROR
 </template>
 </category>
 
@@ -862,21 +595,21 @@ Dostępne opcje:<br/>
 <condition name="nastroj">
 <li value="FABULARNY">
 <condition name="rok_wydania">
-<li value="NOWE">Polecam Baldurs Gate 3 lub Cyberpunk 2077 Phantom Liberty. Najlepsze RPG ostatnich lat.</li>
-<li value="KLASYKI">Polecam Wiedzmin 3 lub Mass Effect Legendary Edition. Nieśmiertelne klasyki.</li>
-<li>Polecam Wiedzmin 3 lub Baldurs Gate 3. Fabuła tak gruba, ze moglaby miec wlasny DLC.</li>
+<li value="NOWE">Polecam Baldurs Gate 3 lub Cyberpunk 2077 Phantom Liberty. <br/>Najlepsze RPG ostatnich lat.</li>
+<li value="KLASYKI">Polecam Wiedzmin 3 lub Mass Effect Legendary Edition.<br/> Nieśmiertelne klasyki.</li>
+<li>Polecam Wiedzmin 3 lub Baldurs Gate 3.<br/> Fabuła tak gruba, ze moglaby miec wlasny DLC.</li>
 </condition>
 </li>
 <li value="RELAKS">
 <condition name="cena">
-<li value="DARMOWA">Polecam Genshin Impact - darmowe RPG z ogromnym swiatem.</li>
-<li value="DO_50">Polecam Stardew Valley - idealne do relaksu za rozsądną cenę.</li>
-<li>Polecam Stardew Valley. Idealne jesli chcesz odpoczac od ludzi i hodowac marchewki.</li>
+<li value="DARMOWA">Polecam Genshin Impact <br/>Darmowe RPG z ogromnym swiatem.</li>
+<li value="DO_50">Polecam Stardew Valley <br/>Idealne do relaksu za rozsądną cenę.</li>
+<li>Polecam Stardew Valley. <br/>Idealne jesli chcesz odpoczac od ludzi i hodowac marchewki.</li>
 </condition>
 </li>
-<li value="RYWALIZACJA">Polecam Divinity Original Sin 2. Turowe walki ktore potrafia zniszczyc ego.</li>
-<li value="HORROR">Polecam Vampire: The Masquerade - Bloodlines. RPG horror z klimatem.</li>
-<li>Polecam Skyrim albo Cyberpunk 2077. Jedno ma smoki, drugie bugi. Oba sa super.</li>
+<li value="RYWALIZACJA">Polecam Divinity Original Sin 2. <br/>Turowe walki ktore potrafia zniszczyc ego.</li>
+<li value="HORROR">Polecam Vampire: The Masquerade - Bloodlines. <br/>RPG horror z klimatem.</li>
+<li>Polecam Skyrim albo Cyberpunk 2077. <br/>Jedno ma smoki, drugie bugi. Oba sa super.</li>
 </condition>
 </li>
 
@@ -884,42 +617,42 @@ Dostępne opcje:<br/>
 <condition name="tryb">
 <li value="SINGLEPLAYER">
 <condition name="poziom">
-<li value="WYSOKI">Polecam Doom Eternal na najwyższym poziomie. Krwawa łaźnia!</li>
-<li>Polecam Doom Eternal. Strzelanie tak szybkie, ze Twoja myszka poprosi o L4.</li>
+<li value="WYSOKI">Polecam Doom Eternal na najwyższym poziomie. <br/>Krwawa łaźnia!</li>
+<li>Polecam Doom Eternal. <br/>Strzelanie tak szybkie, ze Twoja myszka poprosi o L4.</li>
 </condition>
 </li>
-<li value="MULTIPLAYER">Polecam CS2 lub Valorant. Idealne jesli lubisz krzyczec na randomow.</li>
-<li value="KOOPERACJA">Polecam Deep Rock Galactic. Kooperacyjny FPS z krasnoludami!</li>
-<li>Polecam Half Life 2. Klasyk ktory starzeje sie lepiej niz wino.</li>
+<li value="MULTIPLAYER">Polecam CS2 lub Valorant. <br/>Idealne jesli lubisz krzyczec na randomow.</li>
+<li value="KOOPERACJA">Polecam Deep Rock Galactic. <br/>Kooperacyjny FPS z krasnoludami!</li>
+<li>Polecam Half Life 2. <br/>Klasyk ktory starzeje sie lepiej niz wino.</li>
 </condition>
 </li>
 
 <li value="RPG_I_FPS">
-Polecam Fallout 4 lub Borderlands 3 - mieszanka RPG i FPS w jednym!
+Polecam Fallout 4 lub Borderlands 3 <br/>Mieszanka RPG i FPS w jednym!
 </li>
 
 <li value="STRATEGIA">
 <condition name="nastroj">
-<li value="FABULARNY">Polecam Frostpunk - strategia z mroczną fabułą.</li>
-<li value="RELAKS">Polecam Cities: Skylines - buduj miasto w swoim tempie.</li>
-<li value="RYWALIZACJA">Polecam StarCraft 2 - esportowa legenda.</li>
-<li>Polecam Civilization VI. Jedna tura i nagle jest 3 w nocy.</li>
+<li value="FABULARNY">Polecam Frostpunk <br/>Strategia z mroczną fabułą.</li>
+<li value="RELAKS">Polecam Cities: Skylines <br/>Buduj miasto w swoim tempie.</li>
+<li value="RYWALIZACJA">Polecam StarCraft 2 <br/>Esportowa legenda.</li>
+<li>Polecam Civilization VI. <br/>Jedna tura i nagle jest 3 w nocy.</li>
 </condition>
 </li>
 
-<li value="PRZYGODOWA">Polecam Red Dead Redemption 2. Najlepsza symulacja jazdy konnej w historii.</li>
-<li value="INDIE">Polecam Hades. Nawet jak przegrasz, wyglada to stylowo.</li>
-<li value="HORROR">Polecam Alien Isolation. Idealne jesli lubisz byc sledzony przez cos co nie placi podatkow.</li>
-<li value="WYSCIGI">Polecam Forza Horizon 5. Kolorowe, szybkie i nie trzeba placic za paliwo.</li>
-<li value="SYMULATOR">Polecam Euro Truck Simulator 2. Najspokojniejsza jazda tirem bez mandatu.</li>
-<li value="MOBA">Polecam League of Legends. Gra w ktorej najwiekszym bossem jest Twoja druzyna.</li>
-<li value="BATTLE ROYALE">Polecam Apex Legends. Skakanie, strzelanie i chaos w najlepszym wydaniu.</li>
+<li value="PRZYGODOWA">Polecam Red Dead Redemption 2. <br/>Najlepsza symulacja jazdy konnej w historii.</li>
+<li value="INDIE">Polecam Hades. <br/>Nawet jak przegrasz, wyglada to stylowo.</li>
+<li value="HORROR">Polecam Alien Isolation. <br/>Idealne jesli lubisz byc sledzony przez cos co nie placi podatkow.</li>
+<li value="WYSCIGI">Polecam Forza Horizon 5. <br/>Kolorowe, szybkie i nie trzeba placic za paliwo.</li>
+<li value="SYMULATOR">Polecam Euro Truck Simulator 2. <br/>Najspokojniejsza jazda tirem bez mandatu.</li>
+<li value="MOBA">Polecam League of Legends. <br/>Gra w ktorej najwiekszym bossem jest Twoja druzyna.</li>
+<li value="BATTLE ROYALE">Polecam Apex Legends. <br/>Skakanie, strzelanie i chaos w najlepszym wydaniu.</li>
 
 <li>
 <condition name="cena">
-<li value="DARMOWA">Polecam Warframe lub Path of Exile - darmowe hity na PC.</li>
-<li value="DO_50">Polecam Hades lub Hollow Knight - perełki indie za rozsądną cenę.</li>
-<li>Polecam Wiedzmin 3, Hades, Hollow Knight i Doom Eternal. Zestaw jak z promocji GOTY.</li>
+<li value="DARMOWA">Polecam Warframe lub Path of Exile <br/>Darmowe hity na PC.</li>
+<li value="DO_50">Polecam Hades lub Hollow Knight <br/>Perełki indie za rozsądną cenę.</li>
+<li>Polecam Wiedzmin 3, Hades, Hollow Knight i Doom Eternal. <br/>Zestaw jak z promocji GOTY.</li>
 </condition>
 </li>
 </condition>
@@ -930,48 +663,48 @@ Polecam Fallout 4 lub Borderlands 3 - mieszanka RPG i FPS w jednym!
 <condition name="tryb">
 <li value="SINGLEPLAYER">Polecam God of War Ragnarok, The Last of Us Part I, Ghost of Tsushima.</li>
 <li value="MULTIPLAYER">Polecam Destiny 2 lub Gran Turismo 7 online.</li>
-<li value="KOOPERACJA">Polecam It Takes Two - najlepsza kooperacja na PS!</li>
-<li>Polecam God of War, Ghost of Tsushima i The Last of Us 2. Ekskluzywy tak dobre, ze Xbox placze w rogu.</li>
+<li value="KOOPERACJA">Polecam It Takes Two <br/>Najlepsza kooperacja na PS!</li>
+<li>Polecam God of War, Ghost of Tsushima i The Last of Us 2. <br/>Ekskluzywy i tak dobry, ze Xbox placze w rogu.</li>
 </condition>
 </li>
 
 <!-- XBOX -->
 <li value="XBOX">
 <condition name="gatunek">
-<li value="WYSCIGI">Polecam Forza Motorsport - król wyścigów na Xbox.</li>
-<li value="FPS">Polecam Halo Infinite - legendarny FPS w nowej odsłonie.</li>
-<li>Polecam Forza Horizon i Halo Infinite. Game Pass to cheat code dla portfela.</li>
+<li value="WYSCIGI">Polecam Forza Motorsport <br/>Król wyścigów na Xbox.</li>
+<li value="FPS">Polecam Halo Infinite  <br/>Legendarny FPS w nowej odsłonie.</li>
+<li>Polecam Forza Horizon i Halo Infinite. <br/>Game Pass to cheat code dla portfela.</li>
 </condition>
 </li>
 
 <!-- SWITCH -->
 <li value="SWITCH">
 <condition name="nastroj">
-<li value="RELAKS">Polecam Animal Crossing: New Horizons - ultimate relaks.</li>
-<li value="FABULARNY">Polecam Zelda: Tears of the Kingdom - epicka przygoda.</li>
-<li>Polecam Zelda Breath of the Wild. Gra ktora udowadnia ze 30 FPS tez moze byc piekne.</li>
+<li value="RELAKS">Polecam Animal Crossing: New Horizons <br/>Poziom relaks, ultimate.</li>
+<li value="FABULARNY">Polecam Zelda: Tears of the Kingdom <br/>Epicka przygoda.</li>
+<li>Polecam Zelda Breath of the Wild. <br/>Gra ktora udowadnia ze 30 FPS tez moze byc piekne.</li>
 </condition>
 </li>
 
 <!-- MOBILE -->
 <li value="MOBILE">
 <condition name="cena">
-<li value="DARMOWA">Polecam Genshin Impact i Pokemon GO - darmowe hity.</li>
-<li>Polecam Genshin Impact i Stardew Valley. Idealne do grania w autobusie.</li>
+<li value="DARMOWA">Polecam Genshin Impact i Pokemon GO <br/>Darmowe hity.</li>
+<li>Polecam Genshin Impact i Stardew Valley. <br/>Idealne do grania w autobusie.</li>
 </condition>
 </li>
 
 <!-- WIELOPLATFORMOWE -->
 <li value="PC_I_PS">
-Polecam Elden Ring lub Cyberpunk 2077 - dzialaja świetnie na obu platformach!
+Polecam Elden Ring lub Cyberpunk 2077 <br/>Dzialaja świetnie na obu platformach!
 </li>
 
 <li value="PS_I_XBOX">
-Polecam Hogwarts Legacy lub Starfield - dostępne na obu konsolach.
+Polecam Hogwarts Legacy lub Starfield <br/>Dostępne na obu konsolach.
 </li>
 
 <li value="PC_I_SWITCH">
-Polecam Hades lub Hollow Knight - idealne na PC i w podroży na Switchu.
+Polecam Hades lub Hollow Knight <br/>Idealne na PC i w podroży na Switchu.
 </li>
 
 <li>
@@ -982,46 +715,226 @@ Nie znam platformy, ale Wiedzmin 3 dziala prawie wszedzie oprocz kalkulatora.
 <!-- DODATEK HUMORYSTYCZNY -->
 <condition name="humor">
 <li value="ON">
-A tak poza tym, pamietaj: jesli gra jest trudna, to nie Ty jestes slaby, tylko gra jest zbyt ambitna.
+A tak poza tym, pamietaj:<br/> jesli gra jest trudna, to nie Ty jestes slaby, tylko gra jest zbyt ambitna.
 <condition name="tryb">
 <li value="KOOPERACJA">Kooperacja to jak małżeństwo - ktoś zawsze zapomni wynieść śmieci (w grze).</li>
 </condition>
 </li>
 </condition>
 
-<!-- INFORMACJE DODATKOWE -->
-<condition name="tryb_dialogu">
-<li value="KROKOWY">
-Mozesz teraz: <br/>
-- Napisac OPISZ NAZWE GRY dla szczegółów<br/>
-- Napisac ZMIEN * aby zmienic preferencje<br/>
-- Napisac COFNIJ aby wrocic<br/>
-- Napisac POLEC MI GRE dla nowej rekomendacji
-</li>
-<li value="SZYBKI">
-Koniec rekomendacji!<br/>
-- OPISZ NAZWE GRY<br/>
-- ZMIEN *<br/>
-- COFNIJ<br/>
-- POLEC MI GRE
-</li>
+</template>
+</category>
+<category>
+  <pattern>RESET PREFERENCJE</pattern>
+  <template>
+    <think>
+      <set name="gatunek">NIEZNANY</set>
+      <set name="platforma">NIEZNANA</set>
+      <set name="tryb">NIEZNANY</set>
+      <set name="poziom">NISKI</set>
+      <set name="nastroj">NEUTRALNY</set>
+      <set name="cena">DOWOLNA</set>
+      <set name="rok_wydania">DOWOLNY</set>
+      <set name="ulubione"></set>
+      <set name="humor">OFF</set>
+      <set name="tryb_dialogu">KROKOWY</set>
+      <set name="historia"></set>
+      <set name="zarzadzanie_etap"></set>
+    </think>
+    Zresetowalem wszystko. Jestem czysty jak nowy save w Skyrimie. Napisz MOJA ULUBIONA GRA TO: aby zaczac dodawać ulubione gry.<br/>
+    Napisz POLEC MI GRE. Aby sprawdzić jaka gra będzie najlepsza dla Ciebie.
+  </template>
+</category>
+
+<category>
+    <pattern>CZESC</pattern>
+    <template>
+      Cześć! 👋 Jestem Twoim doradcą growym. Wybieram gry lepiej niż loot w Diablo. 🔥<br/>
+      <br/>
+      📋 Dostępne opcje:<br/>
+      - 🎮 POLEC MI GRE - rozpoczęcie rekomendacji<br/>
+      - 🔄 RESET PREFERENCJE - zmiana ustawień<br/>
+      - ❓ POMOC - wszystkie komendy<br/>
+      - 😄 WLACZ HUMOR - tryb humorystyczny<br/>
+      <br/>
+      Co chcesz zrobić?
+    </template>
+</category>  
+
+<!-- POMOC -->
+<category>
+<pattern>POMOC</pattern>
+<template>
+    📚 Dostępne komendy:<br/>
+    <br/>
+    🎯 REKOMENDACJE:<br/>
+    - 🎮 POLEC MI GRE - rozpoczęcie rekomendacji gier<br/>
+    - 📖 OPISZ [NAZWA GRY] - szczegóły o konkretnej grze<br/>
+    <br/>
+    ⚙️ ZARZĄDZANIE PREFERENCJAMI:<br/>
+    - 👁️ POKAZ PREFERENCJE - aktualne ustawienia<br/>
+    - 🔄 RESET PREFERENCJE - reset wszystkiego<br/>
+    <br/>
+    🎭 FUNKCJE DODATKOWE:<br/>
+    - 😄 WLACZ HUMOR - włączenie trybu humorystycznego<br/>
+    - 😐 WYLACZ HUMOR - wyłączenie trybu humorystycznego<br/>
+    <br/>
+    ❤️ ULUBIONE:<br/>
+    - ⭐ MOJA ULUBIONA GRA TO [NAZWA] - dodanie gry do ulubionych<br/>
+    - 📋 ULUBIONE GRY - pokazanie ulubionych gier<br/>
+    <br/>
+    ℹ️ INFORMACJE:<br/>
+    - 🏷️ LISTA GATUNKOW - dostępne gatunki gier<br/>
+    - 🎲 LISTA GIER - dostępne tytuły gier<br/>
+    - 📊 ILE GIER ZNASZ - statystyki bota<br/>
+    <br/>
+    ❓ POMOC:<br/>
+    - ❓ POMOC - pokazanie tej listy komend<br/>
+    - 👋 CZESC - przywitanie z botem<br/>
+    <br/>
+    Napisz dowolną komendę, aby rozpocząć! 🚀
+</template>
+</category>
+
+<!-- HUMOR -->
+<category>
+<pattern>WLACZ HUMOR</pattern>
+<template>
+<think><set name="humor">ON</set></think>
+Tryb humorystyczny wlaczony.<br/>
+Od teraz moje teksty beda bardziej przypominac NPCa po trzech piwach.
+</template>
+</category>
+
+<category>
+<pattern>WYLACZ HUMOR</pattern>
+<template>
+<think><set name="humor">OFF</set></think>
+Tryb humorystyczny wylaczony.<br/>
+Wracam do bycia powaznym jak Dark Souls bez rollowania.
+</template>
+</category>
+
+<!-- ULUBIONE - POPRAWIONE -->
+<category>
+<pattern>MOJA ULUBIONA GRA TO *</pattern>
+<template>
+<think>
+  <set name="ulubione">
+    <condition name="ulubione">
+      <li value=""><star/></li>
+      <li><get name="ulubione"/>, <star/></li>
+    </condition>
+  </set>
+</think>
+Dodalem "<star/>" do ulubionych.<br/>
+Twoj gust jest lepszy niz AI w FIFA.
+</template>
+</category>
+
+<category>
+<!-- ULUBIONE GRY - POPRAWIONA -->
+
+<pattern>ULUBIONE GRY</pattern>
+<template>
+<condition name="ulubione">
+  <li value="">
+    Nie masz jeszcze ulubionych gier.<br/>
+    Napisz MOJA ULUBIONA GRA TO [nazwa gry]
+  </li>
+  <li>
+    <condition name="ulubione">
+      <li value="unknown">Nie masz jeszcze ulubionych gier.<br/>
+      Napisz MOJA ULUBIONA GRA TO [nazwa gry]</li>
+      <li>
+        Twoje ulubione gry to: <get name="ulubione"/><br/>
+        <condition name="humor">
+          <li value="ON"> Ladna kolekcja, jak biblioteka Steam po wyprzedazy!</li>
+          <li></li>
+        </condition>
+      </li>
+    </condition>
+  </li>
 </condition>
 </template>
 </category>
 
-<!-- Reszta kategorii pozostaje bez zmian -->
+<!-- INFORMACJE -->
 <category>
-<pattern>MOJA ULUBIONA GRA TO *</pattern>
+<pattern>LISTA GATUNKOW</pattern>
 <template>
-<think><set name="ulubione"><get name="ulubione"/> <star/></set></think>
-Dodalem <star/> do ulubionych. Twoj gust jest lepszy niz AI w FIFA.
+Dostępne gatunki gier:<br/>
+<br/>
+- ⚔️ RPG<br/>
+- 🔫 FPS<br/>
+- ♟️ STRATEGIA<br/>
+- 🗺️ PRZYGODOWA<br/>
+- ✨ INDIE<br/>
+- 👻 HORROR<br/>
+- 🏁 WYSCIGI<br/>
+- 🎮 SYMULATOR<br/>
+- ⚡ MOBA<br/>
+- 👑 BATTLE ROYALE<br/>
+Możesz też podać dwa gatunki np. RPG I FPS
 </template>
 </category>
 
 <category>
-<pattern>ULUBIONE GRY</pattern>
+<pattern>ILE GIER ZNASZ</pattern>
 <template>
-Twoje ulubione gry to <get name="ulubione"/>. Ladna kolekcja, jak biblioteka Steam po wyprzedazy.
+Znam ponad 100 gier z różnych gatunków i platform.<br/>
+W sam raz zeby nie miec backlogu jak kazdy prawdziwy gracz!
+</template>
+</category>
+
+<!-- POKAZ PREFERENCJE -->
+<category>
+<pattern>POKAZ PREFERENCJE</pattern>
+<template>
+Twoje aktualne preferencje:<br/>
+- Gatunek: <get name="gatunek"/><br/>
+- Platforma: <get name="platforma"/><br/>
+- Tryb: <get name="tryb"/><br/>
+- Poziom: <get name="poziom"/><br/>
+- Nastroj: <get name="nastroj"/><br/>
+- Cena: <get name="cena"/><br/>
+- Rok wydania: <get name="rok_wydania"/><br/>
+<br/>
+Użyj RESET PREFERENCJE aby zmienić ustawienia.
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<template>
+Nie rozumiem.<br/>
+Napisz POLEC MI GRE lub POMOC.
+</template>
+</category>
+
+
+<category>
+<pattern>LISTA GIER</pattern>
+<template>
+📚 Mam opisy wielu gier! Zapytaj np:<br/>
+<br/>
+- 🐺 OPISZ WIEDZMIN 3<br/>
+- 🌃 OPISZ CYBERPUNK 2077<br/>
+- 🧙‍♂️ OPISZ BALDURS GATE 3<br/>
+- 🐎 OPISZ RED DEAD REDEMPTION 2<br/>
+- 💀 OPISZ ELDEN RING<br/>
+- 🍄 OPISZ THE LAST OF US<br/>
+- 🪓 OPISZ GOD OF WAR<br/>
+<br/>
+🎮 I wiele innych! Po prostu napisz `OPISZ [nazwa gry]`
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<template>
+Nie rozumiem. Ale nie martw sie, nawet Siri czasem nie ogarnia. <br/>
+Napisz POLEC MI GRE lub POMOC.
 </template>
 </category>
 
